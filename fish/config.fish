@@ -20,9 +20,10 @@ eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv |
 
 #the theme of fish  ---->> bobthefish 
 set -g theme_display_vi no
-set -g theme_color_scheme solarized
+set -g theme_color_scheme dark
 set -g fish_prompt_pwd_dir_length 0
-set -g theme_newline_prompt ">>"
+set -g theme_display_user yes
+set -g theme_newline_prompt '$ '
 
 #  fzf
 export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /etc /home'
