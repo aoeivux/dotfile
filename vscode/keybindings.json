@@ -91,6 +91,11 @@
 		"command": "list.focusDown",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
+  { // move up
+		"key": "k",
+		"command": "list.focusUp",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
 	{ // move down at auto completion prompt
 		"key": "ctrl+j",
 		"command": "selectNextSuggestion",
