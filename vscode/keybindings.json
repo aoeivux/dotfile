@@ -122,9 +122,9 @@
 		"when": "panelFocus && activePanel == 'workbench.panel.markers' "
 	},
 	{ // move up at problem open
-		"key": "ctrl+shift+k",
+		"key": "k",
 		"command": "list.focusUp",
-		"when": "panelFocus && activePanel == 'workbench.panel.markers' "
+		"when": "panelFocus && activePanel == 'workbench.panel.markers'"
 	},
 	{
 		"key": "tab",
@@ -499,5 +499,20 @@
 	{
 		"key": "shift+cmd+[",
 		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "k",
+		"command": "list.focusUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-list.focusUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "up",
+		"command": "-list.focusUp",
+		"when": "listFocus && !inputFocus"
 	}
 ]
