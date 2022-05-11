@@ -16,12 +16,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]]
+-- vim.cmd [[
+--   augroup packer_user_config
+--     autocmd!
+--     autocmd BufWritePost plugins.lua source <afile> | PackerSync
+--   augroup end
+-- ]]
 
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
@@ -92,10 +92,7 @@ return packer.startup(function(use)
     "nvim-telescope/telescope-fzf-native.nvim",
     run = "make",
   }
-  -- use {
-  --   "nvim-telescope/telescope-frecency.nvim",
-  --   requires = {"tami5/sqlite.lua"}   -- NOTE: need to install sqlite lib
-  -- }
+
   use "nvim-telescope/telescope-ui-select.nvim"
   use "nvim-telescope/telescope-live-grep-raw.nvim"
   use "MattesGroeger/vim-bookmarks"
@@ -138,7 +135,6 @@ return packer.startup(function(use)
   -- Editor enhance
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "terrortylor/nvim-comment"
-  use "Shatur/neovim-session-manager"
   -- cmp plugins
   use {
     "hrsh7th/nvim-cmp",
@@ -151,7 +147,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
   -- use "quangnguyen30192/cmp-nvim-tags"
-  -- use "jsfaint/gen_tags.vim"
   use "ray-x/cmp-treesitter"
   use "f3fora/cmp-spell" -- spell check
   -- use "github/copilot.vim"  -- Copilot setup,
@@ -167,6 +162,11 @@ return packer.startup(function(use)
   -- use "code-biscuits/nvim-biscuits" -- AST enhance, require treesitter
   use "tpope/vim-repeat" --  . command enhance
   use "tpope/vim-surround" -- vim surround
+
+
+
+
+
   -- use "terryma/vim-expand-region" -- expand/shrink region by +/-
   -- use "meain/vim-printer"
 
@@ -211,17 +211,10 @@ return packer.startup(function(use)
 
   -- UI
   -- Colorschemes
-  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use("folke/tokyonight.nvim")
+
   -- use "martinsione/darkplus.nvim"
   -- use "navarasu/onedark.nvim"
-  use({
-    "catppuccin/nvim",
-    as = "catppuccin"
-  })
-  use {
-    "projekt0n/github-nvim-theme",
-    tag = "v0.0.4",
-  }
 
   -- use "folke/tokyonight.nvim"
   use "kyazdani42/nvim-tree.lua" -- file explore
@@ -242,7 +235,8 @@ return packer.startup(function(use)
   -- use "kevinhwang91/nvim-bqf" -- better quick fix, use trouble instead
   -- use "RRethy/vim-illuminate" -- highlight undercursor word
   -- use "lewis6991/spellsitter.nvim" -- spell checker
-  use "folke/todo-comments.nvim" -- todo comments
+  -- use "folke/todo-comments.nvim" -- todo comments
+
   -- use "liuchengxu/vista.vim"     -- outline
   -- use "simrat39/symbols-outline.nvim" -- outline
   use "stevearc/aerial.nvim"
@@ -262,12 +256,7 @@ return packer.startup(function(use)
     opt = true,
     cmd = "PreviewMarkdown",
   } -- NOTE:: glow required : https://github.com/charmbracelet/glow
-  use "voldikss/vim-translator"
-  use "mtdl9/vim-log-highlighting"
-  use "Pocco81/HighStr.nvim"
-  -- use "dstein64/vim-startuptime"
-  use "ravenxrz/vim-local-history"
-  -- use "henriquehbr/nvim-startup.lua"
+  use "dstein64/vim-startuptime"
   -- use "AckslD/nvim-neoclip.lua"
   use "vim-test/vim-test"
   use {
@@ -275,10 +264,6 @@ return packer.startup(function(use)
     run = ":UpdateRemotePlugins"
   }
   use { 'michaelb/sniprun', run = 'bash ./install.sh' }
-  -- use "ravenxrz/DoxygenToolkit.vim"
-  use "Pocco81/AutoSave.nvim"
-  use "djoshea/vim-autoread"
-  use "jonstoler/werewolf.vim"
 
 
   -- Automatically set up your configuration after cloning packer.nvim
