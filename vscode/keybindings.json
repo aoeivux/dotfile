@@ -96,16 +96,6 @@
 		"command": "list.focusUp",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	{ // move down at auto completion prompt
-		"key": "ctrl+j",
-		"command": "selectNextSuggestion",
-		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-	},
-	{ // move up at auto completion prompt
-		"key": "ctrl+k",
-		"command": "selectPrevSuggestion",
-		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-	},
 	{ // move down at quick open
 		"key": "ctrl+j",
 		"command": "workbench.action.quickOpenNavigateNext",
@@ -128,18 +118,8 @@
 	},
 	{
 		"key": "tab",
-		"command": "selectNextSuggestion",
-		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-	},
-	{
-		"key": "tab",
 		"command": "workbench.action.quickOpenNavigateNext",
 		"when": "inQuickOpen"
-	},
-	{
-		"key": "shift+tab",
-		"command": "selectPrevSuggestion",
-		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
 	},
 	{
 		"key": "shift+tab",

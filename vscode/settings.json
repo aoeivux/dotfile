@@ -173,7 +173,7 @@
 	"vim.useCtrlKeys": false,
 	"vim.useSystemClipboard": true,
 	"vim.vimrc.enable": true,
-	"vim.vimrc.path": "c:\\Users\\Yonxean\\.vsvimrc",
+	"vim.vimrc.path": "/Users/nero/.vsvimrc",
 	"vim.handleKeys": {
 		"<C-a>": false,
 		"<C-f>": false,
@@ -537,9 +537,10 @@
 		},
 	],
 	"window.zoomLevel": -1,
-	"workbench.colorTheme": "Monokai Dimmed",
+	"workbench.colorTheme": "Monokai Pro (Filter Octagon)",
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.list.automaticKeyboardNavigation": false,
 	"workbench.panel.defaultLocation": "right",
-	"workbench.startupEditor": "newUntitledFile"
+	"workbench.startupEditor": "newUntitledFile",
+	"tabnine.experimentalAutoImports": true
 }
