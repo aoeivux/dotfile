@@ -6,7 +6,7 @@ hide_cursor_when_typing: true
 window:
 
   dimensions:
-    columns: 80
+    columns: 100
     lines: 40
 
   # value only for macOS :
@@ -14,7 +14,7 @@ window:
   # buttonless:transparent background but no title bar buttons
   decorations: buttonless
 
-  opacity: 0.8
+  opacity: 0.9
 
   # startup_mode:
   # Windowed

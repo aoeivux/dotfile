@@ -266,7 +266,7 @@
 		"command": "-workbench.action.openEditorAtIndex2"
 	},
 	{
-		"key": "alt+2",
+		"key": "space o",
 		"command": "workbench.action.toggleAuxiliaryBar"
 	},
 	{
