@@ -136,7 +136,7 @@
             "MIMode": "gdb",
             "type": "cppdbg"
         },
-        "program": "${exec}",
+        
         "setupCommands": [
             {
                 "description": "Enable pretty-printing for gdb",
@@ -314,7 +314,16 @@
             // p action will not override clipboard content
             "before": ["p"],
             "after": ["p", "g", "v", "y"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["L"],
+            "after": ["$"]
         }
+
     ],
     /* vim settings end */
     "vsicons.dontShowNewVersionMessage": true,
@@ -406,6 +415,12 @@
             "command": "code-runner.run",
             "key": "r",
             "name": "code runner"
+        },
+        {
+            "command": "workbench.action.toggleAuxiliaryBar",
+            "key": "q",
+            "name": "close outline",
+            "type": "command"
         }
     ],
     "window.zoomLevel": -1,

@@ -266,10 +266,6 @@
 		"command": "-workbench.action.openEditorAtIndex2"
 	},
 	{
-		"key": "space o",
-		"command": "workbench.action.toggleAuxiliaryBar"
-	},
-	{
 		"key": "space",
 		"command": "-breadcrumbs.revealFocused",
 		"when": "breadcrumbsActive && breadcrumbsVisible"
@@ -494,5 +490,5 @@
 		"key": "up",
 		"command": "-list.focusUp",
 		"when": "listFocus && !inputFocus"
-	}
+	},
 ]
