@@ -1,9 +1,9 @@
 {
 	"[c]": {
-		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
 	"[cpp]": {
-		"editor.defaultFormatter": "xaver.clang-format"
+		"editor.defaultFormatter": "ms-vscode.cpptools"
 	},
 	"[go]": {
 		"editor.defaultFormatter": "golang.go"
@@ -128,13 +128,7 @@
 	"settingsSync.ignoredSettings": [
 		"editor.fontFamily"
 	],
-	"svg.preview.mode": "svg",
-	"terminal.external.linuxExec": "/usr/bin/alacritty",
-	"terminal.external.osxExec": "iTerm.app",
-	"terminal.integrated.cwd": "",
-	"terminal.integrated.defaultProfile.linux": "fish",
-	"terminal.integrated.fontSize": 18,
-	"testExplorer.hideEmptyLog": false,
+	"terminal.integrated.fontSize": 15,
 	"testMate.cpp.debug.configTemplate": {
 		"args": "${argsArray}",
 		"cwd": "${cwd}",
@@ -172,10 +166,10 @@
 	"vim.surround": true,
 	"vim.useCtrlKeys": false,
 	"vim.useSystemClipboard": true,
-	"vim.vimrc.enable": true,
-	"vim.vimrc.path": "/Users/nero/.vsvimrc",
+	"vim.vimrc.enable": false,
+	"vim.vimrc.path": "/Users/nero/.vsvimrc", // only for macOs
 	"vim.handleKeys": {
-		"<C-a>": false,
+		"<C-a>": true,
 		"<C-f>": false,
 		"<C-i>": true,
 		"<C-o>": true,
@@ -209,21 +203,35 @@
 		},
 		{
 			"before": [
+				"<C-a>"
+			],
+			"after": [
+				"g",
+				"g",
+				"V",
+				"G"
+			],
+
+		},
+		{
+			"before": [
 				"K"
 			],
 			"after": [
-				"5",
+				"3",
 				"k"
 			],
+			"silent": true
 		},
 		{
 			"before": [
 				"J"
 			],
 			"after": [
-				"5",
+				"3",
 				"j"
 			],
+			"silent": true
 		},
 		{
 			"before": [
@@ -368,7 +376,7 @@
 				"r"
 			],
 			"commands": [
-				"git.revertSelectedRanges",
+				"git.revertSelecFtedRanges",
 			]
 		},
 		// -- rename symbol
@@ -425,7 +433,7 @@
 				"K"
 			],
 			"after": [
-				"5",
+				"3",
 				"k"
 			],
 			"silent": true
@@ -435,7 +443,7 @@
 				"J"
 			],
 			"after": [
-				"5",
+				"3",
 				"j"
 			],
 		},
@@ -506,6 +514,12 @@
 			"command": "workbench.view.scm",
 		},
 		{
+			"key": "G",
+			"name": "Goto Marketplace",
+			"type": "command",
+			"command": "workbench.view.extensions",
+		},
+		{
 			"command": "workbench.action.quickOpen",
 			"key": "f",
 			"name": "Find file",
@@ -526,7 +540,6 @@
 		{
 			"command": "workbench.action.gotoSymbol",
 			"key": "s",
-			"name": "Search document symbol",
 			"type": "command"
 		},
 		{
@@ -535,12 +548,18 @@
 			"name": "Search project symbol",
 			"type": "command"
 		},
-	],
-	"window.zoomLevel": -1,
-	"workbench.colorTheme": "Monokai Pro (Filter Octagon)",
-	"workbench.iconTheme": "vscode-icons",
+		{
+			"command": "code-runner.run",
+			"key": "r",
+			"name": "code runner",
+		},	
+],
+"window.zoomLevel": -1,
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.list.automaticKeyboardNavigation": false,
 	"workbench.panel.defaultLocation": "right",
 	"workbench.startupEditor": "newUntitledFile",
-	"tabnine.experimentalAutoImports": true
+	"tabnine.experimentalAutoImports": true,
+	"workbench.colorTheme": "Material Theme Palenight High Contrast",
+	"terminal.external.windowsExec": ""
 }
