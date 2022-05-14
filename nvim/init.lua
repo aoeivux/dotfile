@@ -5,5 +5,4 @@ require "colorscheme"
 require "utils"
 require "conf"
 require "lsp"
-require "dap"
 

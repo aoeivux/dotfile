@@ -69,11 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["DAPInstall.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/DAPInstall.nvim",
-    url = "https://github.com/ravenxrz/DAPInstall.nvim"
-  },
   LuaSnip = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -169,30 +164,10 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["litee-calltree.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/litee-calltree.nvim",
-    url = "https://github.com/ldelossa/litee-calltree.nvim"
-  },
-  ["litee.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/litee.nvim",
-    url = "https://github.com/ldelossa/litee.nvim"
-  },
-  ["lsp_signature.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
-    url = "https://github.com/ray-x/lsp_signature.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["neovim-cmake"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/neovim-cmake",
-    url = "https://github.com/ravenxrz/neovim-cmake"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -214,21 +189,6 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/ravenxrz/nvim-dap"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
-  },
-  ["nvim-dap-virtual-text"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
-    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
-  },
   ["nvim-lastplace"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lastplace",
@@ -238,21 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
     url = "https://github.com/kosayoda/nvim-lightbulb"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-spectre"] = {
     loaded = true,
@@ -268,11 +213,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-treesitter-context"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
-    url = "https://github.com/romgrk/nvim-treesitter-context"
   },
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
@@ -299,14 +239,6 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["preview-markdown.vim"] = {
-    commands = { "PreviewMarkdown" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/opt/preview-markdown.vim",
-    url = "https://github.com/skanehira/preview-markdown.vim"
-  },
   ["project.nvim"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/project.nvim",
@@ -316,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/sniprun",
     url = "https://github.com/michaelb/sniprun"
-  },
-  ["telescope-dap.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
-    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
@@ -336,11 +263,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",
     url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
-  },
-  ["telescope-vim-bookmarks.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/telescope-vim-bookmarks.nvim",
-    url = "https://github.com/tom-anders/telescope-vim-bookmarks.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -362,25 +284,10 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
-  ["vim-bookmarks"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-bookmarks",
-    url = "https://github.com/MattesGroeger/vim-bookmarks"
-  },
-  ["vim-matchup"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-matchup",
-    url = "https://github.com/andymass/vim-matchup"
-  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
-  },
-  ["vim-startuptime"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-startuptime",
-    url = "https://github.com/dstein64/vim-startuptime"
   },
   ["vim-surround"] = {
     loaded = true,
@@ -410,12 +317,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
-
--- Command lazy-loads
-time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file PreviewMarkdown lua require("packer.load")({'preview-markdown.vim'}, { cmd = "PreviewMarkdown", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-time([[Defining lazy-load commands]], false)
-
 if should_profile then save_profiles() end
 
 end)
