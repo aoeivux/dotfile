@@ -14,7 +14,7 @@ alias bsource="bass source"
 alias s="neofetch"
 alias tm="tmux"
 alias lvim="bass bash ~/.local/bin/lvim"
-
+alias we="curl 'https://wttr.in/?lang=zh-cn'"
 
 
 export EDITOR=/opt/homebrew/bin/nvim
@@ -35,7 +35,7 @@ set -g theme_display_user no
 set -g theme_newline_prompt '>>> '
 
 # load the tmux
-# bsource ~/.config/fish/some_sh/tmux.sh
+bsource ~/.config/fish/some_sh/tmux.sh
 
 #  fzf
 export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /etc /home'
