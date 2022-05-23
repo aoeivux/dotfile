@@ -4,5 +4,6 @@ require "plugins"
 require "colorscheme"
 require "utils"
 require "conf"
-require "lsp"
+require "lsp.setup"
+-- require'lspconfig'.jdtls.setup{}
 

@@ -111,12 +111,17 @@ local mappings = {
 
   ["P"] = { "<cmd>SessionManager load_session<cr>", "Projects" },
 
-  ["t"] = {
-    "<cmd>UltestSummary<CR>", "Unit Test"
+  t = {
+    name ="run/test",
+    t = {"<cmd>UltestSummary<CR>", "Unit Test"},
+    r = {"<cmd>QuickRun<CR>", "QuickRun"},
   },
 
   ["o"] = {
     "<cmd>AerialToggle<CR>", "Outline"
+  },
+  ["e"] = {
+    "<cmd>NvimTreeToggle<CR>", "File Explorer"
   },
   ["v"] = {
     "<cmd>lua require('telescope').extensions.neoclip.default(require('telescope.themes').get_ivy())<cr>",
@@ -147,17 +152,6 @@ local mappings = {
     r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
     q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
 
-    -- b = { "<cmd>lua require'dap'.step_back()<cr>", "Step Back" },
-    -- c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-    -- d = { "<cmd>lua require'dap'.disconnect()<cr>", "Disconnect" },
-    -- e = { "<cmd>lua require'dapui'.eval()<cr>", "Evaluate" },
-    -- g = { "<cmd>lua require'dap'.session()<cr>", "Get Session" },
-    -- h = { "<cmd>lua require'dap.ui.widgets'.hover()<cr>", "Hover Variables" },
-    -- S = { "<cmd>lua require'dap.ui.widgets'.scopes()<cr>", "Scopes" },
-    -- i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
-    -- o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
-    -- t = { "<cmd>lua require'dap'.toggle_breakpoint()<cr>", "Toggle Breakpoint" },
-    -- u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
   },
 
   T = {
@@ -170,19 +164,6 @@ local mappings = {
     g = { "<cmd>Gitsigns setloclist<cr>", "Open changed hunk" },
   },
 
-  -- g = {
-  --   name = "Git",
-  --   b = { "<cmd>VGit buffer_gutter_blame_preview<cr>", "File Blame" },
-  --   d = { "<cmd>VGit buffer_diff_preview<cr>", "Diff File" },
-  --   D = { "<cmd>VGit project_diff_preview<cr>", "Diff Project" },
-  --   s = { "<cmd>VGit buffer_stage<cr>", "Stage File" },
-  --   u = { "<cmd>VGit buffer_unstage<cr>", "Unstage File" },
-  --   r = { "<cmd>VGit buffer_reset<cr>", "Reset File" },
-  --   f = { "<cmd>VGit buffer_history_preview <cr>", "Reset File" },
-  --
-  --   B = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-  --   c = { "<cmd>Telescope git_commits<cr>", "Checkout commit" },
-  -- },
 
   g = {
      name = "Git",
