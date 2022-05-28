@@ -497,10 +497,5 @@
 		"key": "ctrl+u",
 		"command": "-list.focusPageUp",
 		"when": "listFocus && !inputFocus"
-	},
-	{
-		"key": "ctrl+u",
-		"command": "-extension.vim_ctrl+u",
-		"when": "editorTextFocus && vim.active && vim.use<C-u> && !inDebugRepl"
-	},
+	}
 ]

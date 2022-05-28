@@ -31,7 +31,7 @@ sniprun.setup({
 
   display_options = {
     terminal_width = 45,       --# change the terminal display option width
-    notification_timeout = 5   --# timeout for nvim_notify output
+    notification_timeout = 10   --# timeout for nvim_notify output
   },
 
   --# You can use the same keys to customize whether a sniprun producing

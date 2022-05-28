@@ -58,27 +58,18 @@ return packer.startup(function(use)
 
 
   -- LSP
-  -- use "neovim/nvim-lspconfig" -- enable LSP
-  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-  -- use "RishabhRD/popfix"
-  -- use "RishabhRD/nvim-lsputils"
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "kosayoda/nvim-lightbulb" -- code action
-  -- use "ray-x/lsp_signature.nvim" -- show function signature when typing
-  -- use {
-  --   "ray-x/guihua.lua",
-  --   run = 'cd lua/fzy && make'
-  -- }
-  -- use { 'ray-x/navigator.lua' } -- super powerful plugin  for code navigation
+  -- jdtls
+  use 'mfussenegger/nvim-jdtls'
 
   -- Editor enhance
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "terrortylor/nvim-comment"
+
   -- cmp plugins
-  use {
-    "hrsh7th/nvim-cmp",
-    -- commit = "4f1358e659d51c69055ac935e618b684cf4f1429",
-  } -- The completion plugin
+  use {"hrsh7th/nvim-cmp",} 
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
@@ -113,7 +104,6 @@ return packer.startup(function(use)
     "lewis6991/gitsigns.nvim",
     tag = "v0.4",
   }
-  use 'sindrets/diffview.nvim'
 
   -- UI
   -- Colorschemes
@@ -137,7 +127,10 @@ return packer.startup(function(use)
     "rcarriga/vim-ultest",
     run = ":UpdateRemotePlugins"
   }
-  use { 'michaelb/sniprun', run = 'bash ./install.sh' }
+  use { 'michaelb/sniprun',
+      run = 'bash ./install.sh',
+      commit = '57fcdc58c443f13d14889bc58c59e2494877509a',
+    }
 
 
   -- Automatically set up your configuration after cloning packer.nvim

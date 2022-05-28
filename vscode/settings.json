@@ -156,14 +156,15 @@
     "testMate.cpp.log.logSentry": "enable",
     /* vim settings start */
     "vim.camelCaseMotion.enable": true,
-    "vim.easymotion": true,
+    "vim.easymotion": false,
+    "vim.statusBarColorControl": false,
     "vim.foldfix": true, // to avoid fold open up autocamatically
     "vim.sneak": false,
     "vim.surround": true,
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     "vim.vimrc.enable": false,
-    "vim.vimrc.path": "/Users/nero/.vsvimrc", // only for macOs
+    // "vim.vimrc.path": "/Users/nero/.vsvimrc", // only for macOs
     "vim.handleKeys": {
         "<C-a>": true,
         "<C-f>": false,
@@ -185,6 +186,10 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["S"],
+            "commands": ["workbench.action.files.save"]
+        },
         {
             "before": ["H"],
             "after": ["^"]
@@ -336,7 +341,6 @@
 
     ],
     /* vim settings end */
-    "vsicons.dontShowNewVersionMessage": true,
     /* which key bindings */
     "whichkey.bindings": [
         {
@@ -358,28 +362,6 @@
                 }
             ]
         },
-        // {
-        //     "key": "o",
-        //     "name": "Outline",
-        //     "type": "conditional",
-        //     "bindings": [
-        //         {
-        //             "key": "",
-        //             "name": "default",
-        //             "type": "command",
-        //             "command": "extension.multiCommand.execute",
-        //             "args": {
-        //                 "sequence": ["outline.focus", "outline.focus"]
-        //             }
-        //         },
-        //         {
-        //             "key": "when:outlinerExplorerView.active && view.outline.visible",
-        //             "name": "Hide outline",
-        //             "type": "command",
-        //             "command": "workbench.action.toggleAuxiliaryBar"
-        //         }
-        //     ]
-        // },
         {
             "key": "g",
             "name": "Source contrl",
@@ -443,5 +425,20 @@
     "editor.formatOnType": true,
     "clang-format.exetutable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
     "code-runner.runInTerminal": true,
-    "code-runner.saveAllFilesBeforeRun": true
+    "code-runner.saveAllFilesBeforeRun": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.checkForSdkUpdates": false,
+    "update.mode": "none",
+    
 }
