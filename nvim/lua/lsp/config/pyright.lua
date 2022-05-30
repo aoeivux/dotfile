@@ -3,7 +3,7 @@ return {
     python = {
       analysis = {
         typeCheckingMode = "on",
-        autoSearchPaths = true,
+    autoSearchPaths = true,
 
       },
     },

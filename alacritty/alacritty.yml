@@ -25,23 +25,23 @@ window:
 
 font:
   normal:
-    family: Hack Nerd Font 
+    family: JetBrainsMono NF 
     style: Regular
 
   bold:
-    family: Hack Nerd Font 
+    family: JetBrainsMono NF 
     style: Bold
 
   italic:
-    family: Hack Nerd Font 
+    family: JetBrainsMono NF 
     style: Italic
 
   bold_italic:
-    family: Hack Nerd Font
+    family: JetBrainsMono NF
     style: Bold Italic
 
   size:
-    16
+    14
 
 
 

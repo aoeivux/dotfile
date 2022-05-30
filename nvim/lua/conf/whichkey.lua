@@ -17,7 +17,7 @@ local setup = {
       operators = false, -- adds help for operators like d, y, ... and registers them for motion / text object completion
       motions = false, -- adds help for motions
       text_objects = false, -- help for text objects triggered after entering an operator
-      windows = true, -- default bindings on <c-w>
+      windows = false, -- default bindings on <c-w>
       nav = true, -- misc bindings to work with windows
       z = false, -- bindings for folds, spelling and others prefixed with z
       g = false, -- bindings for prefixed with g
@@ -112,9 +112,8 @@ local mappings = {
   ["P"] = { "<cmd>SessionManager load_session<cr>", "Projects" },
 
   t = {
-    name ="run/test",
-    t = {"<cmd>UltestSummary<CR>", "Unit Test"},
-    r = {"<cmd>QuickRun<CR>", "QuickRun"},
+    name ="code runner",
+    r = {"<cmd>SnipRun<CR>", "SnipRun"},
   },
 
   ["o"] = {
@@ -188,18 +187,6 @@ local mappings = {
      },
    },
 
-  R = {
-    name = "Replace",
-    f = { "<cmd>lua require('spectre').open_file_search()<CR>", "Replace File" },
-    p = { "<cmd>lua require('spectre').open()<CR>", "Replace Project" },
-    s = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search" },
-    -- -- 全项目替换
-    -- vim.keybinds.gmap("n", "<leader>rp", "", vim.keybinds.opts)
-    -- -- 只替换当前文件
-    -- vim.keybinds.gmap("n", "<leader>rf", , vim.keybinds.opts)
-    -- -- 全项目中搜索当前单词
-    -- vim.keybinds.gmap("n", "<leader>rw", , vim.keybinds.opts)
-  },
 
   l = {
     name = "LSP",

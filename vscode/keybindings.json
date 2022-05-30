@@ -114,7 +114,7 @@
 	{ // move up at problem open
 		"key": "ctrl+shift+k",
 		"command": "list.focusUp",
-		"when": "panelFocus && activePanel == 'workbench.panel.markers'"
+		"when": "panelFocus && activePanel == 'workbench.panel.markers' "
 	},
 	{
 		"key": "tab",
@@ -208,6 +208,12 @@
 		"command": "-editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
 	},
+	{ // quit side bar only when explore is focused
+		"key": "q",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+	},
+	// -- disable a bunch of keybindings which may have conflicts with above keybindings
 	{
 		"key": "ctrl+p",
 		"command": "workbench.action.togglePanel"
@@ -258,6 +264,10 @@
 	{
 		"key": "alt+2",
 		"command": "-workbench.action.openEditorAtIndex2"
+	},
+	{
+		"key": "alt+2",
+		"command": "workbench.action.toggleAuxiliaryBar"
 	},
 	{
 		"key": "space",
@@ -471,31 +481,51 @@
 		"command": "-workbench.action.previousEditor"
 	},
 	{
-		"key": "k",
-		"command": "list.focusUp",
-		"when": "listFocus && !inputFocus"
+		"key": "shift+alt+p",
+		"command": "workbench.action.showCommands"
 	},
 	{
-		"key": "ctrl+p",
-		"command": "-list.focusUp",
-		"when": "listFocus && !inputFocus"
+		"key": "ctrl+shift+p",
+		"command": "-workbench.action.showCommands"
 	},
 	{
-		"key": "up",
-		"command": "-list.focusUp",
-		"when": "listFocus && !inputFocus"
+		"key": "ctrl+w",
+		"command": "workbench.action.closeAuxiliaryBar"
 	},
 	{
-		"key": "ctrl+shift+=",
-		"command": "editor.action.fontZoomIn"
+		"key": "ctrl+shift+t",
+		"command": "workbench.action.terminal.openNativeConsole",
+		"when": "!terminalFocus"
 	},
 	{
-		"key": "ctrl+shift+-",
-		"command": "editor.action.fontZoomOut"
+		"key": "ctrl+shift+c",
+		"command": "-workbench.action.terminal.openNativeConsole",
+		"when": "!terminalFocus"
 	},
 	{
-		"key": "ctrl+u",
-		"command": "-list.focusPageUp",
-		"when": "listFocus && !inputFocus"
+		"key": "ctrl+shift+t",
+		"command": "workbench.action.terminal.copySelection",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+	},
+	{
+		"key": "ctrl+shift+c",
+		"command": "-workbench.action.terminal.copySelection",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+	},
+	{
+		"key": "ctrl+shift+r",
+		"command": "workbench.action.replaceInFiles"
+	},
+	{
+		"key": "ctrl+shift+h",
+		"command": "-workbench.action.replaceInFiles"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+f4",
+		"command": "-workbench.action.closeActiveEditor"
 	}
 ]

@@ -68,7 +68,7 @@
     "editor.cursorSurroundingLines": 8,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "line",
-    "editor.fontFamily": "JetBrainsMono NF",
+    "editor.fontFamily": "Hack Nerd Font",
     "editor.fontSize": 14,
     "editor.formatOnSaveMode": "modifications",
     "editor.inlineSuggest.enabled": true,
@@ -415,6 +415,7 @@
             "type": "command"
         }
     ],
+    "window.zoomLevel": 0,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.panel.defaultLocation": "right",
@@ -438,7 +439,6 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
-    "dart.checkForSdkUpdates": false,
     "update.mode": "none",
-    
+
 }

@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fisher_PatrickF1_2F_fzf_2E_fish_files:/Users/nero/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e/Users/nero/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e/Users/nero/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e/Users/nero/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e/Users/nero/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
 SETUVAR _fisher_edc_2F_bass_files:/Users/nero/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/nero/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_plugins:simnalamburt/shellder\x1ePatrickF1/fzf\x2efish\x1eedc/bass
@@ -41,6 +41,7 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/opt/homebrew/opt/curl/bin\x1e/opt/homebrew/bin\x1e/usr/local/opt/ruby/bin\x1e/Users/nero/\x2efzf/bin\x1e/Users/nero/\x2eyarn/bin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
