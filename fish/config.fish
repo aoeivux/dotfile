@@ -34,12 +34,11 @@ set -g fish_prompt_pwd_dir_length 0
 set -g theme_display_user no
 set -g theme_newline_prompt '>>> '
 
-# autoload the tmux
-
-# bsource ~/.config/fish/some_sh/tmux.sh
+# load the tmux
+bsource ~/.config/fish/some_sh/tmux.sh
 
 #  fzf
-export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /home '
+export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /etc /home'
 export FZF_DEFAULT_OPTS='--height 90% --layout=reverse --bind=alt-j:down,alt-k:up,alt-i:toggle+down --border --preview "echo {} | ~/.config/fish/fzf_preview.py" --preview-window=down'
 
 

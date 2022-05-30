@@ -88,10 +88,17 @@ keymap("n", "gcf", "<cmd>Dox<cr>", opts)
 keymap("n", "<leader>rf", ":%SnipRun<cr>", opts)
 keymap("v", "<leader>rs", ":%SnipRun<cr>", opts)
 
--- for spell check
+-- replace words 
 vim.cmd(
 [[
-  nnoremap <leader>s :call search('\w\>', 'c')<CR>a<C-X><C-S>
+" line
+  nnoremap <leader>s :s/\<<C-r><C-w>\>//g<left><left>
+" global
+  nnoremap <leader>S :%s/\<<C-r><C-w>\>//g<left><left>
+  
+  vnoremap <leader>s :s/\<<C-r><C-w>\>//g<left><left>
+" global
+  vnoremap <leader>S :%s/\<<C-r><C-w>\>//g<left><left>
 ]])
 
 

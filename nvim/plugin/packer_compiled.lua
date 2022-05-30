@@ -129,10 +129,20 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
+  },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,

@@ -25,46 +25,53 @@ window:
 
 font:
   normal:
-    family: Hack Nerd Font 
+    family: JetBrainsMono NF 
     style: Regular
 
   bold:
-    family: Hack Nerd Font 
+    family: JetBrainsMono NF 
     style: Bold
 
   italic:
-    family: Hack Nerd Font 
+    family: JetBrainsMono NF 
     style: Italic
 
   bold_italic:
-    family: Hack Nerd Font
+    family: JetBrainsMono NF
     style: Bold Italic
 
   size:
-    16
+    15
 
 
 
 # The 'Dark dimmed' colorscheme from Github.
+#
+
+
+# Add the following to your alacritty.yml file
+# the colorscheme deus
 colors:
   primary:
-    background: '#2d333b'
-    foreground: '#adbac7'
+    background: '#2c323b'
+    foreground: '#eaeaea'
+  # Normal colors
   normal:
-    black:   '#2d333b'
-    red:     '#f47067'
-    green:   '#8ddb8c'
-    yellow:  '#f69d50'
-    blue:    '#6cb6ff'
-    magenta: '#dcbdfb'
-    cyan:    '#96d0ff'
-    white:   '#adbac7'
+    black:   '#242a32'
+    red:     '#d54e53'
+    green:   '#98c379'
+    yellow:  '#e5c07b'
+    blue:    '#83a598'
+    magenta: '#c678dd'
+    cyan:    '#70c0ba'
+    white:   '#eaeaea'
+  # Bright colors
   bright:
-    black:   '#768390'
-    red:     '#f47067'
-    green:   '#8ddb8c'
-    yellow:  '#f69d50'
-    blue:    '#6cb6ff'
-    magenta: '#dcbdfb'
-    cyan:    '#96d0ff'
-    white:   '#adbac7'
+    black:   '#666666'
+    red:     '#ec3e45'
+    green:   '#90c966'
+    yellow:  '#edbf69'
+    blue:    '#73ba9f'
+    magenta: '#c858e9'
+    cyan:    '#2bcec2'
+    white:   '#ffffff'

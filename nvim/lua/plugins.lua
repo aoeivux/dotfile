@@ -57,12 +57,24 @@ return packer.startup(function(use)
   }
 
 
+
+  -- coc.nvim 
+  use {'neoclide/coc.nvim', branch = 'release'}
+
+
+
   -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
+  use {
+    "neovim/nvim-lspconfig", -- enable LSP
+    tag = "v0.1.3"
+  }
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "kosayoda/nvim-lightbulb" -- code action
   -- jdtls
   use 'mfussenegger/nvim-jdtls'
+  -- flutter tools
+  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
 
   -- Editor enhance
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
@@ -109,7 +121,12 @@ return packer.startup(function(use)
   -- Colorschemes
   use "folke/tokyonight.nvim"
 
-  use "kyazdani42/nvim-tree.lua" -- file explore
+  use {
+    "kyazdani42/nvim-tree.lua",
+    tag = "nightly",
+    -- file explore
+  }
+
   use {
     "akinsho/bufferline.nvim", -- tab
     tag = "v1.2.0",

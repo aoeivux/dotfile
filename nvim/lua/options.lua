@@ -54,7 +54,6 @@ vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 
--- WSL yank support
 vim.cmd [[
 let s:clip = '/mnt/c/Windows/System32/clip.exe' 
 if executable(s:clip)
