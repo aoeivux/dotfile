@@ -527,5 +527,51 @@
 	{
 		"key": "ctrl+f4",
 		"command": "-workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "alt+.",
+		"command": "editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+oem_plus",
+		"command": "workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+numpad_add",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "alt+oem_period",
+		"command": "problems.action.showQuickFixes",
+		"when": "problemFocus"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-problems.action.showQuickFixes",
+		"when": "problemFocus"
+	},
+	{
+		"key": "alt+enter",
+		"command": "keyboard-quickfix.openQuickFix"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "workbench.action.files.openFolderViaWorkspace",
+		"when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "-workbench.action.files.openFolderViaWorkspace",
+		"when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "-workbench.action.gotoSymbol"
 	}
 ]
