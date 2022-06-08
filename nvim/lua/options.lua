@@ -1,7 +1,11 @@
 local options = {
+
+  -- coc nedded
+  shortmess=c,
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 1,                           -- keep status bar position close to bottom
+  hidden = true,
 
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                  -- the encoding written to a file

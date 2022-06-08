@@ -134,15 +134,15 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
-  },
-  ["flutter-tools.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
-    url = "https://github.com/akinsho/flutter-tools.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -194,30 +199,15 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
-  ["nvim-jdtls"] = {
+  ["nvim-deus"] = {
     loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
-    url = "https://github.com/mfussenegger/nvim-jdtls"
+    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-deus",
+    url = "https://github.com/theniceboy/nvim-deus"
   },
   ["nvim-lastplace"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lastplace",
     url = "https://github.com/ethanholz/nvim-lastplace"
-  },
-  ["nvim-lightbulb"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
-    url = "https://github.com/kosayoda/nvim-lightbulb"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-spectre"] = {
     loaded = true,
@@ -294,11 +284,6 @@ _G.packer_plugins = {
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["trouble.nvim"] = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/trouble.nvim",
@@ -313,16 +298,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  ["vim-test"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-test",
-    url = "https://github.com/vim-test/vim-test"
-  },
-  ["vim-ultest"] = {
-    loaded = true,
-    path = "/Users/nero/.local/share/nvim/site/pack/packer/start/vim-ultest",
-    url = "https://github.com/rcarriga/vim-ultest"
   },
   ["which-key.nvim"] = {
     loaded = true,

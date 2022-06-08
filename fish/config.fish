@@ -15,6 +15,7 @@ alias s="neofetch"
 alias tm="tmux"
 alias lvim="bass bash ~/.local/bin/lvim"
 alias we="curl 'https://wttr.in/?lang=zh-cn'"
+alias cls="clear"
 
 
 export EDITOR=/opt/homebrew/bin/nvim
@@ -23,6 +24,8 @@ export EDITOR=/opt/homebrew/bin/nvim
 eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source 
 # <<< conda initialize <<< export SHELLDER_KEEP_PATH=1 
 
+export JDTLS_HOME=$HOME/.local/share/nvim/lsp_servers/jdtls
+export WORKSPACE=$HOME/.local/share/nvim/lsp_servers/jdtls/workspace/
 
 
 #the theme of fish  ---->> bobthefish 
@@ -34,11 +37,12 @@ set -g fish_prompt_pwd_dir_length 0
 set -g theme_display_user no
 set -g theme_newline_prompt '>>> '
 
-# load the tmux
-bsource ~/.config/fish/some_sh/tmux.sh
+# autoload the tmux
+
+# bsource ~/.config/fish/some_sh/tmux.sh
 
 #  fzf
-export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /etc /home'
+export FZF_DEFAULT_COMMAND='fd --hidden --follow -E ".git" -E "node_modules" . /home '
 export FZF_DEFAULT_OPTS='--height 90% --layout=reverse --bind=alt-j:down,alt-k:up,alt-i:toggle+down --border --preview "echo {} | ~/.config/fish/fzf_preview.py" --preview-window=down'
 
 
