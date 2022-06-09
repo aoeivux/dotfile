@@ -101,8 +101,6 @@ tmux source-file ~/.tmux.config
 
 Neovim通过checkhealth检查问题
 
-
-
 ```shell
 sudo apt-get install ranger caca-utils highlight atool w3m poppler-utils mediainfo
 ```
@@ -179,7 +177,9 @@ sudo apt instal ripgrep fd-find
 ### plugins
 #### zsh-autosuggestions
   1. download into ~/.oh-my-zsh/custom/plugins/....
+
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
   2. Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc)
     plugins=( 
     # other plugins...
@@ -188,7 +188,9 @@ sudo apt instal ripgrep fd-find
 
 #### zsh-syntax-highlighting
   1. download into ~/.oh-my-zsh/custom/plugins/....
+
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
   2. Add the pligin append in the zshrc
   plugin=(
   .....
@@ -197,8 +199,10 @@ sudo apt instal ripgrep fd-find
 
 #### zsh-completions
 
-  1. download into ~/.oh-my-zsh/custom/plugins/....
+  1. download into ~/.oh-my-zsh/custom/plugins/...
+
     git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+
   2. Append to the plugins
      plugin=(
     .....
