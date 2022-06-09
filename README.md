@@ -140,14 +140,13 @@ npm install -g neovim
 ```shell
 sudo apt instal ripgrep fd-find
 ```
-
 - java jdk client exit 1and signal 0 问题解决
-  
   - 将jdk升级到11
     
 
-## Coc.nvim配置
+# 分割线------最近将shell从fish换回了zsh,并通过一些插件完成了fish一样的功能，同时，将lsp服务换成了基于coc.nvim的配置，同时也保留了lspconfig的配置
 
+## Coc.nvim配置
 - 根据官网下载Coc.nvim
   
 - 安装必要的插件，因为是通过json管理插件：
@@ -174,5 +173,44 @@ sudo apt instal ripgrep fd-find
   ```shell
   ConInstall coc-marketplace
   ```
-  
 - 通过CocList marketplace打开
+
+## Oh My Zsh
+### plugins
+#### zsh-autosuggestions
+  1. download into ~/.oh-my-zsh/custom/plugins/....
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  2. Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc)
+    plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+)
+
+#### zsh-syntax-highlighting
+  1. download into ~/.oh-my-zsh/custom/plugins/....
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  2. Add the pligin append in the zshrc
+  plugin=(
+  .....
+  zsh-syntax-highlighting
+  )
+
+#### zsh-completions
+
+  1. download into ~/.oh-my-zsh/custom/plugins/....
+    git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+  2. Append to the plugins
+     plugin=(
+    .....
+    zsh-syntax-highlighting
+    )
+
+
+
+## alacritty themes selector
+download with npm
+```shell
+  npm i - g alacritty-themes
+```
+
+

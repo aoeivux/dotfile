@@ -573,5 +573,23 @@
 	{
 		"key": "ctrl+shift+o",
 		"command": "-workbench.action.gotoSymbol"
+	},
+	{
+		"key": "ctrl+shift+=",
+		"command": "editor.action.fontZoomIn"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "editor.action.fontZoomOut"
+	},
+	{
+		"key": "k",
+		"command": "list.focusUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "up",
+		"command": "-list.focusUp",
+		"when": "listFocus && !inputFocus"
 	}
 ]

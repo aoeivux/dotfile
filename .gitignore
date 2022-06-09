@@ -1,0 +1,4 @@
+**/local_history/
+.DS_Store
+packer_compiled.lua
+__pycache__/
