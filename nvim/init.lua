@@ -4,6 +4,4 @@ require "plugins"
 require "colorscheme"
 require "utils"
 require "conf"
-require "lsp.setup"
-
-
+require "coc-config"

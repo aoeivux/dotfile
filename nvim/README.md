@@ -41,7 +41,7 @@ sudo apt instal ripgrep fd-find
   - 将jdk升级到11
     
 
-Coc.nvim配置
+# Coc.nvim配置
 
 - 根据官网下载Coc.nvim
   
@@ -71,3 +71,16 @@ Coc.nvim配置
   ```
   
 - 通过CocList marketplace打开
+
+## use lua_lsp
+
+preinstall luarocks
+
+```shell
+  sudo apt install luarocks
+  sudo luarocks install --server=http://luarocks.org/dev lua-lsp
+```
+
+
+
+

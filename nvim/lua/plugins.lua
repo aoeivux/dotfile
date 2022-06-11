@@ -49,7 +49,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     commit = "44b7c8100269161e20d585f24bce322f6dcdf8d2",
-   }
+  }
 
   use {
     "nvim-treesitter/nvim-treesitter-textobjects",
@@ -57,23 +57,8 @@ return packer.startup(function(use)
   }
 
 
-
-  -- coc.nvim 
-  use {'neoclide/coc.nvim', branch = 'release'}
-
-
-
-  -- LSP
-  use {
-    "neovim/nvim-lspconfig", -- enable LSP
-    tag = "v0.1.3"
-  }
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "kosayoda/nvim-lightbulb" -- code action
-  -- jdtls
-  use 'mfussenegger/nvim-jdtls'
-  -- flutter tools
-  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+  -- coc.nvim
+  use { 'neoclide/coc.nvim', branch = 'release' }
 
 
   -- Editor enhance
@@ -81,7 +66,7 @@ return packer.startup(function(use)
   use "terrortylor/nvim-comment"
 
   -- cmp plugins
-  use {"hrsh7th/nvim-cmp",} 
+  use { "hrsh7th/nvim-cmp", }
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
@@ -120,6 +105,8 @@ return packer.startup(function(use)
   -- UI
   -- Colorschemes
   use "folke/tokyonight.nvim"
+  use "sainnhe/everforest"
+
 
   use {
     "kyazdani42/nvim-tree.lua",
@@ -135,19 +122,20 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim" -- welcome page
   use "stevearc/aerial.nvim" -- outline
   use "norcalli/nvim-colorizer.lua" -- show color
-  use "folke/trouble.nvim"  -- errors and warnings 
+  use "folke/trouble.nvim" -- errors and warnings 
   use "j-hui/fidget.nvim" -- show lsp progress
   use "sindrets/winshift.nvim" -- rerange window layout
 
-  use "vim-test/vim-test"
-  use {
-    "rcarriga/vim-ultest",
-    run = ":UpdateRemotePlugins"
-  }
   use { 'michaelb/sniprun',
-      run = 'bash ./install.sh',
-      commit = '57fcdc58c443f13d14889bc58c59e2494877509a',
-    }
+    run = 'bash ./install.sh',
+    commit = '57fcdc58c443f13d14889bc58c59e2494877509a',
+  }
+
+  -- install without yarn or npm
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
 
   -- Automatically set up your configuration after cloning packer.nvim

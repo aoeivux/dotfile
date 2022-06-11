@@ -18,7 +18,7 @@ local setup = {
       motions = false, -- adds help for motions
       text_objects = false, -- help for text objects triggered after entering an operator
       windows = false, -- default bindings on <c-w>
-      nav = true, -- misc bindings to work with windows
+      nav = false, -- misc bindings to work with windows
       z = false, -- bindings for folds, spelling and others prefixed with z
       g = false, -- bindings for prefixed with g
     },
@@ -81,32 +81,12 @@ local opts = {
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Welcome" },
   ["r"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-  -- ["b"] = {
-  --   "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-  --   "Buffers",
-  -- },
-  -- ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  -- ["w"] = { "<cmd>w!<CR>", "Save" },
-  -- ["q"] = { "<cmd>q!<CR>", "Quit" },
-  -- ["/"] = { "<cmd>lua require('Comment').toggle()<CR>", "Comment" },
   ["C"] = { "<cmd>%bd|e#<CR>", "Close Other Buffers" },
-  -- ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files()<cr>",
-    -- "<cmd>lua require('telescope').extensions.frecenncy.frecency(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
     "Find files",
   },
-  -- ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["F"] = { "<cmd>lua require('telescope').extensions.live_grep_raw.live_grep_raw(require('telescope.themes').get_ivy())<cr>", "Find Text" },
-  ["s"] = {
-    "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>",
-    "Find Document Symbols",
-  },
-  ["S"] = {
-    "<cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<cr>",
-    -- "<cmd>lua require('telescope.builtin').lsp_workspace_symbols()<cr>",
-    "Find Symobls",
-  },
   ["p"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
   ["P"] = { "<cmd>SessionManager load_session<cr>", "Projects" },
@@ -114,6 +94,12 @@ local mappings = {
   t = {
     name ="code runner",
     r = {"<cmd>SnipRun<CR>", "SnipRun"},
+  },
+
+  -- coc keymappings
+  c = {
+    name = "coc key",
+      d = { vim.api.nvim_set_keymap("n", "gd", "<Plug>(coc-definition)", {silent = true}), "goto difinition"}
   },
 
   ["o"] = {
@@ -127,31 +113,6 @@ local mappings = {
     "Clipboard Manager"
   },
 
-  c = {
-    name = "CMake",
-    g = {"<cmd>CMake configure<CR>", "Configure"},
-    t = {"<cmd>CMake select_target<CR>", "SelectTarget"},
-    T = {"<cmd>CMake select_build_type<CR>", "SelectBuildType"},
-    b = {"<cmd>CMake build<CR>", "BuildTarget"},
-    a = {"<cmd>CMake build_all<CR>", "BuildAll"},
-    r = {"<cmd>CMake build_and_run<CR>", "Run"},
-    d = {"<cmd>CMake build_and_debug<CR>", "DebugTarget"},
-    c = {"<cmd>CMake cancel<CR>", "Cancel"},
-    s = {"<cmd>CMake set_target_args<CR>", "SetArg"},
-  },
-
-  d = {
-    name = "Debug",
-    R = { "<cmd>lua require'dap'.run_to_cursor()<cr>", "Run to Cursor" },
-    E = { "<cmd>lua require'dapui'.eval(vim.fn.input '[Expression] > ')<cr>", "Evaluate Input" },
-    X = { "<cmd>lua require'dap'.terminate()<cr>", "Terminate" },
-    -- C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", "Conditional Breakpoint" },
-    T = { "<cmd>lua require'dapui'.toggle('sidebar')<cr>", "Toggle Sidebar" },
-    p = { "<cmd>lua require'dap'.pause()<cr>", "Pause" },
-    r = { "<cmd>lua require'dap'.repl.toggle()<cr>", "Toggle Repl" },
-    q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
-
-  },
 
   T = {
     name = "Trouble",
@@ -188,71 +149,18 @@ local mappings = {
    },
 
 
-  l = {
-    name = "LSP",
-    l = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-    d = {
-      "<cmd>Telescope lsp_document_diagnostics<cr>",
-      "Document Diagnostics",
-    },
-    w = {
-      "<cmd>Telescope lsp_workspace_diagnostics<cr>",
-      "Workspace Diagnostics",
-    },
-    f = { "<cmd>Format<cr>", "Format" },
-    i = { "<cmd>LspInfo<cr>", "Info" },
-    I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
-    j = {
-      "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
-      "Next Diagnostic",
-    },
-    k = {
-      "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",
-      "Prev Diagnostic",
-    },
-    q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
-    r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-    s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
-    S = {
-      "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
-      "Workspace Symbols",
-    },
-  },
-
-  -- h = {
-  --   a = { "<cmd>HSHighlight 1<cr>", "Hightlight 1" },
-  --   b = { "<cmd>HSHighlight 2<cr>", "Hightlight 2" },
-  --   c = { "<cmd>HSHighlight 3<cr>", "Hightlight 3" },
-  --   d = { "<cmd>HSHighlight 4<cr>", "Hightlight 4" },
-  --   e = { "<cmd>HSHighlight 5<cr>", "Hightlight 5" },
-  --   f = { "<cmd>HSHighlight 6<cr>", "Hightlight 6" },
-  --   u = { "<cmd>HSRmHighlight<cr>", "RemoveHighlight" },
-  --   U = { "<cmd>HSRmHighlight rm_all<cr>", "RemoveAllHighlight" },
-  -- },
 
   h = {
     name = "Help",
-    -- b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
-    -- r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
   },
 
 
-  -- t = {
-  --   name = "Terminal",
-  --   n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
-  --   u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-  --   t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-  --   p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
-  --   f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-  --   h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
-  --   v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
-  -- },
 }
 
 which_key.setup(setup)
