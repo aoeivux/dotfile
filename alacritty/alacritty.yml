@@ -74,3 +74,7 @@ colors:
     - { index: 16, color: '0xd18616' }
     - { index: 17, color: '0xf14c4c' }
 theme: github_dark
+
+# 修复mac中alacritty中文输入，删除键会删除alacritty光标之前的字符
+key_bindings:
+  - { key: Back, action:  ReceiveChar}
