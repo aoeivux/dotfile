@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": false,
+        "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -65,21 +65,21 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "apple_vendor_top_case_key_code": "keyboard_fn"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "left_control"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
                                 "key_code": "left_control"
                             },
                             "to": [
                                 {
                                     "apple_vendor_top_case_key_code": "keyboard_fn"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "apple_vendor_top_case_key_code": "keyboard_fn"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
                                 }
                             ]
                         }
