@@ -137,6 +137,8 @@ return packer.startup(function(use)
     commit = '57fcdc58c443f13d14889bc58c59e2494877509a',
   }
 
+  use 'morhetz/gruvbox'
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

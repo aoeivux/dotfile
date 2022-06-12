@@ -21,7 +21,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- NOTE: require winshit plugin
 keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 
--- quickly move 
+-- quickly move
 keymap("n", "J", "5j", opts)
 keymap("n", "K", "5k", opts)
 
@@ -64,7 +64,8 @@ keymap("n", "H", "^", opts)
 keymap("n", "L", "$", opts)
 keymap("v", "H", "^", opts)
 keymap("v", "L", "$", opts)
-
+keymap("n", "{", "%", opts)
+keymap("v", "{", "%", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -74,7 +75,7 @@ keymap("v", ">", ">gv", opts)
 
 -- git diff view
 keymap('n', '<leader>j', ']c', opts)
-keymap('n', '<leader>k','[c', opts)
+keymap('n', '<leader>k', '[c', opts)
 
 
 -- unit test
@@ -88,9 +89,9 @@ keymap("n", "gcf", "<cmd>Dox<cr>", opts)
 keymap("n", "<leader>rf", ":%SnipRun<cr>", opts)
 keymap("v", "<leader>rs", ":%SnipRun<cr>", opts)
 
--- replace words 
+-- replace words
 vim.cmd(
-[[
+  [[
 " line
   nnoremap <leader>s :s/\<<C-r><C-w>\>//g<left><left>
 " global
@@ -107,9 +108,3 @@ vim.cmd(
 keymap("n", "<leader>U", ":cs find c <C-R>=expand('<cword>')<CR><CR>", opts)
 -- find definition
 keymap("n", "<leader>T", ":cs find g <C-R>=expand('<cword>')<CR><CR>", opts)
-
-
-
-
-
-

@@ -67,3 +67,9 @@ if executable(s:clip)
     augroup END
 endif
 ]]
+
+vim.api.nvim_command('set acd')
+
+vim.cmd [[
+autocmd VimEnter * set autochdir
+]]
