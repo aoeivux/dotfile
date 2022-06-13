@@ -109,11 +109,6 @@ return packer.startup(function(use)
     tag = "v0.4",
   }
 
-  -- UI
-  -- Colorschemes
-  use "sainnhe/everforest"
-  use 'theniceboy/nvim-deus'
-
   use {
     "kyazdani42/nvim-tree.lua",
     tag = "nightly",
@@ -131,11 +126,6 @@ return packer.startup(function(use)
   use "folke/trouble.nvim" -- errors and warnings 
   use "j-hui/fidget.nvim" -- show lsp progress
   use "sindrets/winshift.nvim" -- rerange window layout
-
-  use { 'michaelb/sniprun',
-    run = 'bash ./install.sh',
-    commit = '57fcdc58c443f13d14889bc58c59e2494877509a',
-  }
 
   use 'morhetz/gruvbox'
 
