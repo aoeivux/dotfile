@@ -56,7 +56,6 @@ return packer.startup(function(use)
     commit = "c81382328ad47c154261d1528d7c921acad5eae5",
   }
 
-
   -- coc.nvim
   use { 'neoclide/coc.nvim', branch = 'release' }
 
@@ -102,12 +101,6 @@ return packer.startup(function(use)
     tag = "v0.4",
   }
 
-  -- UI
-  -- Colorschemes
-  use "folke/tokyonight.nvim"
-  use "sainnhe/everforest"
-
-
   use {
     "kyazdani42/nvim-tree.lua",
     tag = "nightly",
@@ -126,16 +119,15 @@ return packer.startup(function(use)
   use "j-hui/fidget.nvim" -- show lsp progress
   use "sindrets/winshift.nvim" -- rerange window layout
 
-  use { 'michaelb/sniprun',
-    run = 'bash ./install.sh',
-    commit = '57fcdc58c443f13d14889bc58c59e2494877509a',
-  }
-
   -- install without yarn or npm
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   })
+
+  use 'morhetz/gruvbox'
+  use 'overcache/NeoSolarized'
+  use 'navarasu/onedark.nvim'
 
 
   -- Automatically set up your configuration after cloning packer.nvim
