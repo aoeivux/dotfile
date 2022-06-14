@@ -11,58 +11,34 @@ vim.o.updatetime = 300
 vim.g.coc_global_extensions = {
   'coc-css',
   'coc-diagnostic',
-  'coc-docker',
-  'coc-eslint',
   'coc-flutter-tools',
-  'coc-gitignore',
+  'coc-marketplace',
   'coc-html',
-  'coc-import-cost',
-  'coc-java',
   'coc-json',
-  'coc-lists',
-  'coc-prettier',
+  'coc-lists', --Some basic list sources for coc.nvim
+  'coc-prettier', -- Code format
   'coc-pyright',
   'coc-snippets',
-  'coc-sourcekit',
-  'coc-stylelint',
-  'coc-syntax',
-  'coc-tasks',
   'coc-translator',
   'coc-tsserver',
   'coc-vetur',
   'coc-vimlsp',
   'coc-yaml',
-  'coc-yank',
   'coc-sumneko-lua',
-  'coc-xml'
+  'coc-xml',
+  'coc-go',
 }
 
 
 map("n", "<leader>ca", "<Plug>(coc-codeaction)", {})
 map("n", "gd", "<Plug>(coc-definition)", { silent = true })
--- map("n", "gh", ":call CocActionAsync('doHover')<CR>", opts)
+map("n", "gh", ":call CocActionAsync('doHover')<CR>", opts)
 map("n", "gr", "<Plug>(coc-references", opts)
 map("n", "gi", "<Plug>(coc-implementation)", opts)
 map("n", "gt", "<Plug>(coc-type-definition)", opts)
 map("n", "<leader>rn", "<Plug>(coc-rename)", {})
 map("n", "gk", "<Plug>(coc-diagnostic-prev)", opts)
 map("n", "gj", "<Plug>(coc-diagnostic-next)", opts)
-vim.cmd(
-  [[
-" Use K to show documentation in preview window.
-" nnoremap <silent> K :call ShowDocumentation()<CR>
-
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('gh', 'in')
-  endif
-endfunction
-]]
-)
-
-map("n", "gh", ":call ShowDocumentation()<CR>", opts)
 
 
 -- fit in css html js and so on

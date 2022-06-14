@@ -58,6 +58,7 @@
 		"jsonc",
 		"java",
 		"python",
+		"go",
 		"vue",
 		"svelte",
 		"c",
@@ -80,7 +81,6 @@
 	},
 	"yaml.format.enable": true,
 	"signature.target": "float",
-	"yank.enableCompletion": false,
 	"typescript.suggestionActions.enabled": true,
 	"typescript.format.enabled": true,
 	"flutter.outlineWidth": 40,
@@ -95,7 +95,6 @@
 	"javascript.suggest.names": true,
 	"javascript.suggestionActions.enabled": true,
 	"json.format.enable": true,
-	"eslint.autoFixOnSave": false,
 	"prettier.printWidth": 100,
 	"prettier.disableLanguages": [],
 	"prettier.formatterPriority": 1,
@@ -120,6 +119,11 @@
 			"command": "clangd",
 			"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
 			"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+		},
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": ["go.mod"],
+			"filetypes": ["go"]
 		}
 	},
 	"Lua.telemetry.enable": true
