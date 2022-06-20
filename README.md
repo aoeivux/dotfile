@@ -182,3 +182,4 @@ sudo apt instal ripgrep fd-find
 1. 修复autochdir无法工作，主要是因为插件冲突导致
 2. 修复ranger默认打开dart和html文件是外部软件打开。在rifile.conf添加ext xxx = nvim "$@"
 
+test
