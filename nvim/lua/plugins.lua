@@ -29,14 +29,12 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons" -- icons
 
   -- Telescope
-  use {
-    "nvim-telescope/telescope.nvim",
-    tag = "nvim-0.6",
-  }
+  use "nvim-telescope/telescope.nvim"
   use {
     "nvim-telescope/telescope-fzf-native.nvim",
     run = "make",
   }
+
   use "nvim-telescope/telescope-ui-select.nvim"
   use "nvim-telescope/telescope-live-grep-raw.nvim"
   --
@@ -89,6 +87,13 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- status line
   use 'morhetz/gruvbox'
   use "stevearc/aerial.nvim" -- outline
+  use 'lukas-reineke/indent-blankline.nvim'
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install",
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" },
+  })
+
+  use "akinsho/toggleterm.nvim"
+  use 'lifepillar/vim-solarized8'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

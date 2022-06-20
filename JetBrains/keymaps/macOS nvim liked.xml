@@ -1,0 +1,113 @@
+<keymap version="1" name="macOS nvim liked" parent="Mac OS X 10.5+">
+  <action id="Arrangement.Alias.Rule.Add">
+    <keyboard-shortcut first-keystroke="meta n" />
+  </action>
+  <action id="Arrangement.Rule.Add">
+    <keyboard-shortcut first-keystroke="meta n" />
+  </action>
+  <action id="ChangesView.GroupBy.Directory" />
+  <action id="ChangesView.ToggleCommitUi" />
+  <action id="CheckinProject" />
+  <action id="Console.Execute.Multiline" />
+  <action id="Console.SplitLine" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="Docker.RemoteServers.StartComposeService" />
+  <action id="Docker.RemoteServers.StartContainer" />
+  <action id="EditorCutLineEnd" />
+  <action id="EditorDecreaseFontSize">
+    <mouse-shortcut keystroke="meta button142" />
+  </action>
+  <action id="EditorDown">
+    <keyboard-shortcut first-keystroke="down" />
+    <keyboard-shortcut first-keystroke="ctrl n" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
+  </action>
+  <action id="EditorDownWithSelection">
+    <keyboard-shortcut first-keystroke="shift down" />
+    <keyboard-shortcut first-keystroke="meta j" />
+  </action>
+  <action id="EditorIncreaseFontSize">
+    <mouse-shortcut keystroke="meta button143" />
+  </action>
+  <action id="EditorSplitLine" />
+  <action id="EditorUp">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+  </action>
+  <action id="EditorUpWithSelection">
+    <keyboard-shortcut first-keystroke="shift up" />
+    <keyboard-shortcut first-keystroke="meta k" />
+  </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="meta n" />
+  </action>
+  <action id="Git.Commit.Stage" />
+  <action id="GuiDesigner.QuickJavadoc">
+    <keyboard-shortcut first-keystroke="f1" />
+    <mouse-shortcut keystroke="control button2" />
+  </action>
+  <action id="InsertLiveTemplate" />
+  <action id="KotlinShellExecute" />
+  <action id="List-selectPreviousRow">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="NavBar-selectUp">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="NewElement">
+    <keyboard-shortcut first-keystroke="meta n" />
+  </action>
+  <action id="PopupMenu-selectPrevious">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="QuickJavaDoc">
+    <keyboard-shortcut first-keystroke="f1" />
+    <mouse-shortcut keystroke="control button2" />
+  </action>
+  <action id="ServiceView.AddService">
+    <keyboard-shortcut first-keystroke="meta n" />
+  </action>
+  <action id="ServiceView.GroupByServiceGroups" />
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
+  <action id="SplitChooser.Duplicate" />
+  <action id="Table-selectPreviousRow">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="Terminal.ClearBuffer">
+    <keyboard-shortcut first-keystroke="meta l" />
+  </action>
+  <action id="Terminal.SmartCommandExecution.Run" />
+  <action id="TodoViewGroupByShowPackages" />
+  <action id="Tree-selectPrevious">
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="Uml.NewElement">
+    <keyboard-shortcut first-keystroke="meta n" />
+  </action>
+  <action id="Uml.NodeIntentions">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+    <keyboard-shortcut first-keystroke="ctrl quote" />
+    <keyboard-shortcut first-keystroke="meta enter" />
+    <keyboard-shortcut first-keystroke="ctrl meta enter" />
+  </action>
+  <action id="UsageGrouping.Directory" />
+  <action id="UsageGrouping.Package" />
+  <action id="Vcs.Log.ShowTooltip">
+    <keyboard-shortcut first-keystroke="f1" />
+    <mouse-shortcut keystroke="control button2" />
+  </action>
+  <action id="ViewSource" />
+</keymap>

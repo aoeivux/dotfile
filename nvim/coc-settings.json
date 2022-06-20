@@ -101,6 +101,7 @@
 	"prettier.useTabs": true,
 	"prettier.trailingComma": "all",
 	"prettier.singleQuote": false,
+	"java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.15/",
 	"languageserver": {
 		"dart": {
 			"command": "dart",
