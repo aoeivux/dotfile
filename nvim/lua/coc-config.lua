@@ -25,7 +25,6 @@ vim.g.coc_global_extensions = {
   'coc-vimlsp',
   'coc-yaml',
   'coc-sumneko-lua',
-  'coc-xml',
   'coc-go',
 }
 
