@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="refined"
+ZSH_THEME="avit"
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -77,8 +77,6 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 
-antigen theme refined
-
 antigen apply
 
 
@@ -133,7 +131,6 @@ alias vi="nvim"
 alias vim="nvim"
 alias ff="fzf"
 alias qq="exit"
-alias bsource="bass source"
 alias s="neofetch"
 alias tm="tmux"
 alias we="curl 'https://wttr.in/?lang=zh-cn'"
@@ -146,6 +143,22 @@ alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push"
 alias gg="lazygit"
+
+
+# Open lazygit
+function zle_eval {
+  echo -en "\e[2K\r"
+  eval "$@"
+  zle redisplay
+}
+
+function openlazygit {
+  zle_eval lazygit
+}
+
+zle -N openlazygit; bindkey "^G" openlazygit
+
+
 export EDITOR=/opt/homebrew/bin/nvim
 export JAVA_HOME=/opt/homebrew/Cellar/openjdk@11/11.0.15/
 export PATH=$JAVA_HOME/bin:$PATH
