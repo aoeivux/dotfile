@@ -45,6 +45,7 @@ if not status_ok then
   return
 end
 
+
 nvim_tree.setup({
   auto_reload_on_write = true,
   disable_netrw = false,

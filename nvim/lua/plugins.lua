@@ -74,11 +74,7 @@ return packer.startup(function(use)
 
   use "folke/which-key.nvim" -- which  key
 
-  use {
-    "kyazdani42/nvim-tree.lua",
-    tag = "nightly",
-    -- file explore
-  }
+  use "kyazdani42/nvim-tree.lua"
 
   use {
     "akinsho/bufferline.nvim", -- tab

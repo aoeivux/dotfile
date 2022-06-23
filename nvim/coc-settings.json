@@ -101,21 +101,20 @@
 	"prettier.useTabs": true,
 	"prettier.trailingComma": "all",
 	"prettier.singleQuote": false,
-	"java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.15/",
 	"languageserver": {
-		"dart": {
-			"command": "dart",
-			"args": [
-				"/opt/homebrew/Caskroom/flutter/3.0.0/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
-				"--lsp",
-				"--client-id",
-				"vim",
-				"--client-version",
-				"coc.nvim"
-			],
-			"filetypes": ["dart"],
-			"trace.server": "verbose"
-		},
+		// 	"dart": {
+		// 		"command": "dart",
+		// 		"args": [
+		// 			"(your path with dart or flutter)/flutter/3.0.0/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot",
+		// 			"--lsp",
+		// 			"--client-id",
+		// 			"vim",
+		// 			"--client-version",
+		// 			"coc.nvim"
+		// 		],
+		// 		"filetypes": ["dart"],
+		// 		"trace.server": "verbose"
+		// 	},
 		"clangd": {
 			"command": "clangd",
 			"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
