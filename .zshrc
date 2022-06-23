@@ -102,6 +102,20 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
+# Open lazygit
+function zle_eval {
+  echo -en "\e[2K\r"
+  eval "$@"
+  zle redisplay
+}
+
+function openlazygit {
+  zle_eval lazygit
+}
+
+zle -N openlazygit; bindkey "^G" openlazygit
+
+
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
