@@ -215,10 +215,6 @@
 	},
 	// -- disable a bunch of keybindings which may have conflicts with above keybindings
 	{
-		"key": "ctrl+p",
-		"command": "workbench.action.togglePanel"
-	},
-	{
 		"key": "ctrl+j",
 		"command": "-editor.action.insertLineAfter",
 		"when": "editorTextFocus && neovim.ctrlKeysInsert && !neovim.recording && neovim.mode == 'insert'"
@@ -465,7 +461,7 @@
 		"when": "notebookEditorFocused && !inputFocus"
 	},
 	{
-		"key": "ctrl+shift+l",
+		"key": "ctrl+n",
 		"command": "workbench.action.nextEditor"
 	},
 	{
@@ -473,7 +469,7 @@
 		"command": "-workbench.action.nextEditor"
 	},
 	{
-		"key": "ctrl+shift+h",
+		"key": "ctrl+p",
 		"command": "workbench.action.previousEditor"
 	},
 	{
@@ -575,14 +571,6 @@
 		"command": "-workbench.action.gotoSymbol"
 	},
 	{
-		"key": "ctrl+shift+=",
-		"command": "editor.action.fontZoomIn"
-	},
-	{
-		"key": "ctrl+shift+-",
-		"command": "editor.action.fontZoomOut"
-	},
-	{
 		"key": "k",
 		"command": "list.focusUp",
 		"when": "listFocus && !inputFocus"
@@ -591,5 +579,21 @@
 		"key": "up",
 		"command": "-list.focusUp",
 		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+shift+oem_plus",
+		"command": "editor.action.fontZoomIn"
+	},
+	{
+		"key": "ctrl+shift+oem_minus",
+		"command": "editor.action.fontZoomOut"
+	},
+	{
+		"key": "ctrl+shift+oem_minus",
+		"command": "-workbench.action.zoomOut"
 	}
 ]
