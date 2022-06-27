@@ -4,114 +4,118 @@
 	//	"command": "workbench.action.focusActiveEditorGroup",
 	//	"when": "!terminalFocus"
 	//},
-	{ // make cursor back to editor
+	{
+		// make cursor back to editor
 		"key": "ctrl+k",
 		"command": "workbench.action.focusActiveEditorGroup",
 		"when": "panelFocus && activePanel"
 	},
-	{ // make cursor back to editor
+	{
+		// make cursor back to editor
 		"key": "ctrl+h",
 		"command": "workbench.action.focusActiveEditorGroup",
 		"when": "panelFocus && activePanel"
 	},
-	{ // window move down
+	{
+		// window move down
 		"key": "ctrl+j",
 		"command": "vim.remap",
 		"when": "vim.mode == 'Normal' && !suggestWidgetVisible && !inQuickOpen",
 		"args": {
-			"after": [
-				"<c-w>",
-				"j"
-			],
+			"after": ["<c-w>", "j"]
 		}
 	},
-	{ // window move up
+	{
+		// window move up
 		"key": "ctrl+k",
 		"command": "vim.remap",
 		"when": "vim.mode == 'Normal' && !suggestWidgetVisible && !inQuickOpen && !panelFocus",
 		"args": {
-			"after": [
-				"<c-w>",
-				"k"
-			],
+			"after": ["<c-w>", "k"]
 		}
 	},
-	{ // window move left
+	{
+		// window move left
 		"key": "ctrl+h",
 		"command": "vim.remap",
 		"when": "vim.mode == 'Normal' && !suggestWidgetVisible && !inQuickOpen && !panelFocus",
 		"args": {
-			"after": [
-				"<c-w>",
-				"h"
-			],
+			"after": ["<c-w>", "h"]
 		}
 	},
-	{ // window move right
+	{
+		// window move right
 		"key": "ctrl+l",
 		"command": "vim.remap",
 		"when": "vim.mode == 'Normal' && !suggestWidgetVisible && !inQuickOpen",
 		"args": {
-			"after": [
-				"<c-w>",
-				"l"
-			],
+			"after": ["<c-w>", "l"]
 		}
 	},
-	{ // open file expoler use which key
+	{
+		// open file expoler use which key
 		"key": "e",
 		"command": "whichkey.triggerKey",
 		"when": "whichkeyVisible && sideBarVisible && explorerViewletVisible",
 		"args": {
 			"key": "e",
 			"when": "sideBarVisible && explorerViewletVisible"
-		},
+		}
 	},
-	{ // open file expoler use which key
+	{
+		// open file expoler use which key
 		"key": "o",
 		"command": "whichkey.triggerKey",
 		"when": "whichkeyVisible && outlinerExplorerView.active && view.outline.visible",
 		"args": {
 			"key": "o",
 			"when": "outlinerExplorerView.active && view.outline.visible"
-		},
+		}
 	},
-	{ // rename file
+	{
+		// rename file
 		"key": "r",
 		"command": "renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	{ // disable old style rename shortcut
+	{
+		// disable old style rename shortcut
 		"key": "enter",
 		"command": "-renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	{ // move down
+	{
+		// move down
 		"key": "j",
 		"command": "list.focusDown",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-  { // move up
+	{
+		// move up
 		"key": "k",
 		"command": "list.focusUp",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	{ // move down at quick open
+	{
+		// move down at quick open
 		"key": "ctrl+j",
 		"command": "workbench.action.quickOpenNavigateNext",
 		"when": "inQuickOpen"
 	},
-	{ // move up at quick open
+	{
+		// move up at quick open
 		"key": "ctrl+k",
 		"command": "workbench.action.quickOpenNavigatePrevious",
 		"when": "inQuickOpen"
 	},
-	{ // move down at problem open
+	{
+		// move down at problem open
 		"key": "ctrl+shift+j",
 		"command": "list.focusDown",
 		"when": "panelFocus && activePanel == 'workbench.panel.markers' "
 	},
-	{ // move up at problem open
+	{
+		// move up at problem open
 		"key": "ctrl+shift+k",
 		"command": "list.focusUp",
 		"when": "panelFocus && activePanel == 'workbench.panel.markers'"
@@ -126,84 +130,92 @@
 		"command": "workbench.action.quickOpenNavigatePrevious",
 		"when": "inQuickOpen"
 	},
-	{ // open selected explorer item 
+	{
+		// open selected explorer item
 		"key": "enter",
 		"command": "list.select",
 		"when": "explorerViewletVisible && filesExplorerFocus"
 	},
-	{ // open reference localtion without quit reference view
+	{
+		// open reference localtion without quit reference view
 		"key": "o",
 		"command": "revealReference",
 		"when": "listFocus && referenceSearchVisible && !inputFocus && !treeElementCanCollapse && !treeElementCanExpand"
 	},
-	{ // open reference location with quit reference view
+	{
+		// open reference location with quit reference view
 		"key": "enter",
 		"command": "extension.multiCommand.execute",
 		"args": {
-			"sequence": [
-				"revealReference",
-				"closeReferenceSearch"
-			]
+			"sequence": ["revealReference", "closeReferenceSearch"]
 		},
 		"when": "listFocus && referenceSearchVisible && !inputFocus && !treeElementCanCollapse && !treeElementCanExpand"
 	},
-	{ // do not close debug view when press enter
+	{
+		// do not close debug view when press enter
 		"key": "enter",
 		"command": "extension.multiCommand.execute",
 		"args": {
-			"sequence": [
-				"list.select",
-				"workbench.action.togglePanel"
-			]
+			"sequence": ["list.select", "workbench.action.togglePanel"]
 		},
 		"when": "panelFocus && !inDebugRepl && activePanel!='workbench.panel.markers'"
 	},
-	{ // select file to open
+	{
+		// select file to open
 		"key": "l",
 		"command": "list.select",
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
-	{ // toggle folder expand
+	{
+		// toggle folder expand
 		"key": "o",
 		"command": "list.toggleExpand",
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
-	{ // collapse folder
+	{
+		// collapse folder
 		"key": "h",
 		"command": "list.collapse",
 		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 	},
-	{ // new file
+	{
+		// new file
 		"key": "a",
 		"command": "explorer.newFile",
 		"when": "filesExplorerFocus && !inputFocus"
 	},
-	{ // new folder
+	{
+		// new folder
 		"key": "shift+a",
 		"command": "explorer.newFolder",
 		"when": "filesExplorerFocus && !inputFocus"
 	},
-	{ // delete file or folder
+	{
+		// delete file or folder
 		"key": "d",
 		"command": "deleteFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
 	},
-	{ // toggle terminal
+	{
+		// toggle terminal
 		"key": "ctrl+\\",
 		"command": "workbench.action.terminal.toggleTerminal",
 		"when": "terminal.active"
 	},
-	{ // maxmize terminal
+	{
+		// maxmize terminal
 		"key": "ctrl+m",
 		"command": "workbench.action.toggleMaximizedPanel",
 		"when": "terminalFocus"
 	},
-	{ // find & replace
+	{
+		// find & replace
 		"key": "ctrl+f",
 		"command": "editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
 	},
-	{ // disable built-in ctrl + r so thant undo in vim can execute
+	{
+		// disable built-in ctrl + r so thant undo in vim can execute
 		"key": "ctrl+r",
 		"command": "-editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
@@ -340,10 +352,6 @@
 		"command": "-magit.reset-mixed"
 	},
 	{
-		"key": "ctrl+u x",
-		"command": "-magit.reset-hard"
-	},
-	{
 		"key": "y",
 		"command": "-magit.show-refs"
 	},
@@ -455,7 +463,7 @@
 		"when": "notebookEditorFocused && !inputFocus"
 	},
 	{
-		"key": "ctrl+shift+l",
+		"key": "ctrl+n",
 		"command": "workbench.action.nextEditor"
 	},
 	{
@@ -463,7 +471,7 @@
 		"command": "-workbench.action.nextEditor"
 	},
 	{
-		"key": "ctrl+shift+h",
+		"key": "ctrl+p",
 		"command": "workbench.action.previousEditor"
 	},
 	{
@@ -497,5 +505,29 @@
 		"key": "ctrl+u",
 		"command": "-list.focusPageUp",
 		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+u",
+		"command": "list.focusPageUp",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "-editor.action.insertLineAfter",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "keyboard-quickfix.openQuickFix"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-problems.action.showQuickFixes",
+		"when": "problemFocus"
+	},
+	{
+		"key": "cmd+.",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
 	}
 ]
