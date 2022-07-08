@@ -4,8 +4,9 @@ if not status_ok then
   return
 end
 vim.opt.termguicolors = true
-vim.opt.list = true
-vim.opt.listchars:append("space:⋅")
+vim.g.indent_blankline_char = " "
+-- vim.opt.list = true
+-- vim.opt.listchars:append("space:⋅")
 -- end of line char
 -- vim.opt.listchars:append("eol:↴")
 
