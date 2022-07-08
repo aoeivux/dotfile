@@ -1,4 +1,7 @@
 .DS_Store
 packer_compiled.lua
 __pycache__/
-.local_history/
+.local_history/ 
+node_modules/
+package-lock.json
+package.json
