@@ -456,6 +456,30 @@
         "statusBar.background": "#2165da",
         "statusBar.foreground": "#f5f6fa",
         "editorCursor.foreground": "#2165da",
+        "editorCursor.background": "#F5f6fa"
     },
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace,'FiraCode Nerd Font'",
 
 }
