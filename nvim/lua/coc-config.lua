@@ -38,13 +38,23 @@ map("n", "gt", "<Plug>(coc-type-definition)", opts)
 map("n", "<leader>rn", "<Plug>(coc-rename)", {})
 map("n", "gk", "<Plug>(coc-diagnostic-prev)", opts)
 map("n", "gj", "<Plug>(coc-diagnostic-next)", opts)
+map("i", "<TAB>", "pumvisible() ? '<C-n>' : '<TAB>'", { noremap = true, silent = true, expr = true })
+map("i", "<S-TAB>", "pumvisible() ? '<C-p>' : '<C-h>'", { noremap = true, expr = true })
 
 
 -- fit in css html js and so on
 map("n", "<leader>f", ":CocCommand prettier.formatFile<CR>", { noremap = true })
-map("i", "<TAB>", "pumvisible() ? '<C-n>' : '<TAB>'", { noremap = true, silent = true, expr = true })
-map("i", "<S-TAB>", "pumvisible() ? '<C-p>' : '<C-h>'", { noremap = true, expr = true })
+
 
 -- translator
 map("n", "<Leader>t", "<Plug>(coc-translator-p)", opts)
 map("v", "<Leader>t", "<Plug>(coc-translator-pv)", opts)
+
+-- Use <c-space> to trigger completion(suggestions).
+vim.cmd [[
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+]]

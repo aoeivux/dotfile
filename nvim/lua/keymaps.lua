@@ -24,10 +24,12 @@ keymap("n", "K", "5k", opts)
 keymap("v", "J", "5j", opts)
 keymap("v", "K", "5k", opts)
 
---macos
-keymap("n", "<F5>", ":!open -a Google\\ Chrome %<CR><CR>", opts)
+--macos open this file in browser
+-- keymap("n", "<F5>", ":!open -a Microsoft\\ Edge %<CR><CR>", opts)
 -- keymap("n", "<F5>", ":!open -a Safari %<CR><CR>", opts)
+keymap("n", "<F5>", ":!open -a min %<CR><CR>", opts)
 
+-- open current url in default browser
 vim.cmd [[
 function! HandleURI()
   let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
