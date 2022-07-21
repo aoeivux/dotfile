@@ -94,7 +94,7 @@ return packer.startup(function(use)
 
   use "akinsho/toggleterm.nvim"
   use 'lifepillar/vim-solarized8'
-
+  use 'sheerun/vim-polyglot' -- 解决了在html嵌入javascript代码缩进错误的问题
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

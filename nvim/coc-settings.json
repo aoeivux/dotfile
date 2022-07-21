@@ -102,6 +102,8 @@
 	"prettier.trailingComma": "all",
 	"prettier.singleQuote": false,
 	"java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.15/",
+	"emmet.showExpandedAbbreviation": false,
+	"emmet.includeLanguages": { "vue-html": "html", "javascript": "javascriptreact" },
 	"languageserver": {
 		"dart": {
 			"command": "dart",
