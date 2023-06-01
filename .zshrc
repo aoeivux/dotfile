@@ -467,7 +467,7 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 export JDTLS_HOME=/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-jdtls/
 export MAVEN_HOME=/Users/nero/Enviroments/apache-maven-3.8.4
 
-export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-9.jdk/Contents/Home
 export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home
 export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home
 
@@ -492,3 +492,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 #if [ -z "$TMUX" ]; then
 #    tmux attach -t default || tmux new -s default
 #fi
+
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
