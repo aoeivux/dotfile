@@ -1,0 +1,78 @@
+#!/usr/bin/env sh
+
+
+# initialization
+arch -arm64e sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="arch -arm64e sudo yabai --load-sa"
+
+source ~/.config/yabai/initialization.sh
+
+# ====
+# Signals
+# ====
+
+# Initialize the temp folder when adding or removing displays
+yabai -m signal --add event=display_added action="~/.config/yabai/initialization.sh"
+yabai -m signal --add event=display_removed action="~/.config/yabai/initialization.sh"
+yabai -m signal --add event=window_focused action="~/.config/yabai/change-window-border-color-when-window-focused.sh"
+yabai -m signal --add event=window_destroyed action="~/.config/yabai/auto-focus-to-new-one-when-window-destroyed.sh 2> /dev/null"
+yabai -m signal --add event=application_hidden action="~/.config/yabai/auto-focus-to-new-one-when-window-destroyed.sh 2> /dev/null"
+yabai -m signal --add event=window_minimized action="~/.config/yabai/auto-focus-to-new-one-when-window-destroyed.sh 2> /dev/null"
+
+# ====
+# Settings
+# ====
+
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          off
+yabai -m config window_placement             second_child
+yabai -m config window_topmost               off
+yabai -m config window_shadow                float
+
+yabai -m config window_border                off
+# yabai -m config window_border_placement      inset
+yabai -m config window_border_blur           on
+yabai -m config window_border_hidpi          off
+yabai -m config window_border_width          1
+yabai -m config window_border_radius         5
+yabai -m config active_window_border_color   #a0c69d
+yabai -m config normal_window_border_color   #ffffff
+
+yabai -m config window_opacity               off
+yabai -m config window_opacity_duration      0.96
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        1.0
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 off
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+
+yabai -m config layout                       bsp
+yabai -m config top_padding                  31
+yabai -m config bottom_padding               5
+yabai -m config left_padding                 5
+yabai -m config right_padding                5
+yabai -m config window_gap                   5
+
+# animation
+#yabai -m config window_animation_duration    0.30
+
+
+
+# ====
+# Rules
+# ====
+
+otherApp='^(IINA|访达|Calendar|日历|System Preferences|系统偏好设置|Mail|微信|WeChatc|QQ|印象笔记|灵犀|网易云音乐|Alfred Preferences|Tencent Lemon|企业微信|Todoist|Input Source Pro|Spotify|Enpass|预览|scrcpy)$'
+yabai -m rule --add app="${otherApp}" manage=off
+
+## specific rule
+
+yabai -m rule --add app="^IntelliJ IDEA$" manage=off
+yabai -m rule --add app="^IntelliJ IDEA$" title="( – )" manage=on
+
+yabai -m config external_bar all:0:0
+
+
+echo "yabai configuration loaded.."

@@ -1,0 +1,167 @@
+env:
+  TERM: xterm-256color
+
+hide_cursor_when_typing: true
+
+window:
+
+  dimensions:
+    columns: 130
+    lines: 40
+
+  # value only for macOS :
+  # transparent:transparent background and title bar buttons
+  # buttonless:transparent background but no title bar buttons
+  decorations: buttonless
+
+  opacity: 1
+
+  # startup_mode:
+  # Windowed
+  # Fullscreen
+  # Maximized
+  startup_mode: Windowed
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font 
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+  size: 15
+# The 'Dark dimmed' colorscheme from Github.
+colors:
+  # Default colors
+  primary:
+    background: '0x24292e'
+    foreground: '0xd1d5da'
+
+  # Normal colors
+  normal:
+    black: '0x24292e'
+    red: '0xf14c4c'
+    green: '0x23d18b'
+    yellow: '0xe2e210'
+    blue: '0x3b8eea'
+    magenta: '0xbc3fbc'
+    cyan: '0x29b7da'
+    white: '0xd1d5da'
+
+  # Bright colors
+  bright:
+    black: '0x666666'
+    red: '0xf14c4c'
+    green: '0x23d18b'
+    yellow: '0xf5f543'
+    blue: '0x3b8eea'
+    magenta: '0xd670d6'
+    cyan: '0x29b7da'
+    white: '0xd1d5da'
+
+  indexed_colors:
+    - { index: 16, color: '0xd18616' }
+    - { index: 17, color: '0xf14c4c' }
+theme: github_dark
+# 修复mac中alacritty中文输入，删除键会删除alacritty光标之前的字符
+key_bindings:
+  - { key: Back, action: ReceiveChar }
+#
+  # Fix Alt as Meta in macOS
+  - { key: A, mods: Option, chars: "\ea" }
+  - { key: B, mods: Option, chars: "\eb" }
+  - { key: C, mods: Option, chars: "\ec" }
+  - { key: D, mods: Option, chars: "\ed" }
+  - { key: E, mods: Option, chars: "\ee" }
+  - { key: F, mods: Option, chars: "\ef" }
+  - { key: G, mods: Option, chars: "\eg" }
+  - { key: H, mods: Option, chars: "\eh" }
+  - { key: I, mods: Option, chars: "\ei" }
+  - { key: J, mods: Option, chars: "\ej" }
+  - { key: K, mods: Option, chars: "\ek" }
+  - { key: L, mods: Option, chars: "\el" }
+  - { key: M, mods: Option, chars: "\em" }
+  - { key: N, mods: Option, chars: "\en" }
+  - { key: O, mods: Option, chars: "\eo" }
+  - { key: P, mods: Option, chars: "\ep" }
+  - { key: Q, mods: Option, chars: "\eq" }
+  - { key: R, mods: Option, chars: "\er" }
+  - { key: S, mods: Option, chars: "\es" }
+  - { key: T, mods: Option, chars: "\et" }
+  - { key: U, mods: Option, chars: "\eu" }
+  - { key: V, mods: Option, chars: "\ev" }
+  - { key: W, mods: Option, chars: "\ew" }
+  - { key: X, mods: Option, chars: "\ex" }
+  - { key: Y, mods: Option, chars: "\ey" }
+  - { key: Z, mods: Option, chars: "\ez" }
+  - { key: A, mods: Option|Shift, chars: "\eA" }
+  - { key: B, mods: Option|Shift, chars: "\eB" }
+  - { key: C, mods: Option|Shift, chars: "\eC" }
+  - { key: D, mods: Option|Shift, chars: "\eD" }
+  - { key: E, mods: Option|Shift, chars: "\eE" }
+  - { key: F, mods: Option|Shift, chars: "\eF" }
+  - { key: G, mods: Option|Shift, chars: "\eG" }
+  - { key: H, mods: Option|Shift, chars: "\eH" }
+  - { key: I, mods: Option|Shift, chars: "\eI" }
+  - { key: J, mods: Option|Shift, chars: "\eJ" }
+  - { key: K, mods: Option|Shift, chars: "\eK" }
+  - { key: L, mods: Option|Shift, chars: "\eL" }
+  - { key: M, mods: Option|Shift, chars: "\eM" }
+  - { key: N, mods: Option|Shift, chars: "\eN" }
+  - { key: O, mods: Option|Shift, chars: "\eO" }
+  - { key: P, mods: Option|Shift, chars: "\eP" }
+  - { key: Q, mods: Option|Shift, chars: "\eQ" }
+  - { key: R, mods: Option|Shift, chars: "\eR" }
+  - { key: S, mods: Option|Shift, chars: "\eS" }
+  - { key: T, mods: Option|Shift, chars: "\eT" }
+  - { key: U, mods: Option|Shift, chars: "\eU" }
+  - { key: V, mods: Option|Shift, chars: "\eV" }
+  - { key: W, mods: Option|Shift, chars: "\eW" }
+  - { key: X, mods: Option|Shift, chars: "\eX" }
+  - { key: Y, mods: Option|Shift, chars: "\eY" }
+  - { key: Z, mods: Option|Shift, chars: "\eZ" }
+  - { key: Key1, mods: Option, chars: "\e1" }
+  - { key: Key2, mods: Option, chars: "\e2" }
+  - { key: Key3, mods: Option, chars: "\e3" }
+  - { key: Key4, mods: Option, chars: "\e4" }
+  - { key: Key5, mods: Option, chars: "\e5" }
+  - { key: Key6, mods: Option, chars: "\e6" }
+  - { key: Key7, mods: Option, chars: "\e7" }
+  - { key: Key8, mods: Option, chars: "\e8" }
+  - { key: Key9, mods: Option, chars: "\e9" }
+  - { key: Key0, mods: Option, chars: "\e0" }
+  - { key: Space, mods: Control, chars: "\e" }
+  # Ctrl + Space
+  - { key: Grave, mods: Option, chars: "\e`" }
+  # Alt + `
+  - { key: Grave, mods: Option|Shift, chars: "\e~" }
+  # Alt + ~
+  - { key: Period, mods: Option, chars: "\e." }
+  # Alt + .
+  - { key: Key8, mods: Option|Shift, chars: "\e*" }
+  # Alt + *
+  - { key: Key3, mods: Option|Shift, chars: "\e#" }
+  # Alt + #
+  - { key: Period, mods: Option|Shift, chars: "\e>" }
+  # Alt + >
+  - { key: Comma, mods: Option|Shift, chars: "\e<" }
+  # Alt + <
+  - { key: Minus, mods: Option|Shift, chars: "\e_" }
+  # Alt + _
+  - { key: Key5, mods: Option|Shift, chars: "\e%" }
+  # Alt + %
+  - { key: Key6, mods: Option|Shift, chars: "\e^" }
+  # Alt + ^
+  - { key: Backslash, mods: Option, chars: "\e\\" }
+  # Alt + \
+  - { key: Backslash, mods: Option|Shift, chars: "\e|" }
+  # Alt + |
