@@ -5,15 +5,14 @@
 		"editor.defaultFormatter": "ms-python.python",
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
-		"editor.autoSurround": "brackets",
-		"editor.formatOnType": true
+		"editor.autoSurround": "brackets"
 	},
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java",
 		"editor.tabSize": 4
 	},
 	"[cpp]": {
-		"editor.defaultFormatter": "xaver.clang-format",
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
 		"editor.tabSize": 4
 	},
 	"[c]": {
@@ -64,7 +63,7 @@
 	"cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
 	"cmake.cpptools.intelliSenseMode": "gcc-x64",
 	"cmake.default.buildDirectory": "${workspaceFolder}/cmake-build",
-	"debug.console.fontSize": 14,
+	"debug.console.fontSize": 13,
 	"diffEditor.maxComputationTime": 0,
 	"diffEditor.wordWrap": "off",
 	"doxdocgen.generic.authorEmail": "atheonealone37@gmail.com",
@@ -72,8 +71,7 @@
 	"editor.cursorSurroundingLines": 8,
 	"editor.cursorBlinking": "solid",
 	"editor.cursorStyle": "line",
-	"editor.fontSize": 14,
-	"editor.formatOnSaveMode": "modifications",
+	"editor.fontSize": 13,
 	"editor.insertSpaces": false,
 	"editor.largeFileOptimizations": false,
 	"editor.lineNumbers": "on",
@@ -95,6 +93,7 @@
 	"files.exclude": {
 		"**/.classpath": true,
 		"**/.factorypath": true,
+		"**/.git": false,
 		"**/.project": true,
 		"**/.settings": true,
 		"**/*.class": true,
@@ -113,14 +112,13 @@
 	"remote.SSH.remotePlatform": {
 		"8.130.175.163": "linux",
 		"172.20.150.56": "linux",
-		"47.102.210.23": "linux",
-		"master": "linux"
+		"47.102.210.23": "linux"
 	},
 	"remote.SSH.showLoginTerminal": true,
 	"remote.SSH.useLocalServer": false,
 	"scss.lint.duplicateProperties": "warning",
 	"security.workspace.trust.untrustedFiles": "open",
-	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontSize": 13,
 	"testMate.cpp.debug.configTemplate": {
 		"args": "${argsArray}",
 		"cwd": "${cwd}",
@@ -162,7 +160,6 @@
 	// "vim.vimrc.path": "/Users/nero/.vsvimrc", // only for macOs
 	"vim.handleKeys": {
 		"<C-a>": true,
-		"<C-x>": true,
 		"<C-f>": false,
 		"<C-i>": true, //后一个光标
 		"<C-o>": true, //前一个光标
@@ -593,6 +590,12 @@
 			"key": "j",
 			"name": "Java Project",
 			"type": "command"
+		},
+		{
+			"command": "github.cweijan.mysql.focus",
+			"key": "m",
+			"name": "Sql Manager Tool Focus",
+			"type": "command"
 		}
 	],
 	"workbench.iconTheme": "material-icon-theme",
@@ -619,42 +622,42 @@
 	"terminal.integrated.defaultProfile.osx": "zsh",
 	"open-in-browser.default": "google chrome",
 	//自定义主题颜色，底部状态栏颜色、光标颜色、代码选中高亮颜色 (Darcula Theme)
-	"workbench.colorCustomizations": {
-		// "statusBar.background": "#2165da",
-		// "statusBar.foreground": "#f5f6fa",
-		"statusBar.background": "#1e1f22", // 底部状态栏
-		"titleBar.activeBackground": "#202324", // 顶部标题栏
-		"titleBar.inactiveBackground": "#2b2d30",
-		"titleBar.border": "#1e1f22",
-		"editor.background": "#1e1f22", // 编辑区
-		"editor.lineHighlightBackground": "#2b2d30", //光标所在行高亮
-		"terminal.background": "#1e1f22", // 终端
-		"panel.background": "#1e1f22", //终端上小面板
-		"sideBar.background": "#202323", // 左侧边栏
-		"editorGroupHeader.tabsBackground": "#1e1f22", // tab栏
-		"editorGroupHeader.tabsBorder": "#1e1f22",
-		"editorGroupHeader.border": "#393b40", // tab栏边界
-		"tab.activeBackground": "#1e1f22", //tab文件
-		"tab.inactiveBackground": "#1e1f22",
-		"tab.activeBorder": "#54ff6b", // tab 底部边界
-		"tab.activeBorderTop": "#1e1f22",
-		"editorGutter.background": "#1e1f22", //行数、导航线
-		"activityBar.background": "#2b2d30",
-		"editorCursor.foreground": "#2165da",
-		"editorCursor.background": "#F5f6fa",
-		"editor.selectionBackground": "#214283",
-		"editor.selectionForeground": "#f5f6fa",
-		"editor.findMatchHighlightBackground": "#214283",
-		"menu.background": "#2b2d30", //菜单项
-		"badge.background": "#305fb9", // 信息标签
-		"editorSuggestWidget.background": "#2b2d30", //补全建议
-		"editorSuggestWidget.border": "#2b2d30", //补全建议边界
-		"sideBarSectionHeader.background": "#2b2d30",
-		"editorWidget.background": "#1e1f22", //Ctrl+F查找、ctrl+shift+p、which-key弹出窗口的背景颜色
-		"editorWidget.border": "#1e1f22",
-		"input.background": "#1e1f22",
-		"breadcrumb.background": "#1e1f22",
-	},
+	// "workbench.colorCustomizations": {
+	// 	// "statusBar.background": "#2165da",
+	// 	// "statusBar.foreground": "#f5f6fa",
+	// 	"statusBar.background": "#1e1f22", // 底部状态栏
+	// 	"titleBar.activeBackground": "#202324", // 顶部标题栏
+	// 	"titleBar.inactiveBackground": "#2b2d30",
+	// 	"titleBar.border": "#1e1f22",
+	// 	"editor.background": "#1e1f22", // 编辑区
+	// 	"editor.lineHighlightBackground": "#2b2d30", //光标所在行高亮
+	// 	"terminal.background": "#1e1f22", // 终端
+	// 	"panel.background": "#1e1f22", //终端上小面板
+	// 	"sideBar.background": "#202323", // 左侧边栏
+	// 	"editorGroupHeader.tabsBackground": "#1e1f22", // tab栏
+	// 	"editorGroupHeader.tabsBorder": "#1e1f22",
+	// 	"editorGroupHeader.border": "#393b40", // tab栏边界
+	// 	"tab.activeBackground": "#1e1f22", //tab文件
+	// 	"tab.inactiveBackground": "#1e1f22",
+	// 	"tab.activeBorder": "#54ff6b", // tab 底部边界
+	// 	"tab.activeBorderTop": "#1e1f22",
+	// 	"editorGutter.background": "#1e1f22", //行数、导航线
+	// 	"activityBar.background": "#2b2d30",
+	// 	"editorCursor.foreground": "#2165da",
+	// 	"editorCursor.background": "#F5f6fa",
+	// 	"editor.selectionBackground": "#214283",
+	// 	"editor.selectionForeground": "#f5f6fa",
+	// 	"editor.findMatchHighlightBackground": "#214283",
+	// 	"menu.background": "#2b2d30", //菜单项
+	// 	"badge.background": "#305fb9", // 信息标签
+	// 	"editorSuggestWidget.background": "#2b2d30", //补全建议
+	// 	"editorSuggestWidget.border": "#2b2d30", //补全建议边界
+	// 	"sideBarSectionHeader.background": "#2b2d30",
+	// 	"editorWidget.background": "#1e1f22", //Ctrl+F查找、ctrl+shift+p、which-key弹出窗口的背景颜色
+	// 	"editorWidget.border": "#1e1f22",
+	// 	"input.background": "#1e1f22",
+	// 	"breadcrumb.background": "#1e1f22",
+	// },
 	"terminal.integrated.profiles.windows": {
 		"PowerShell": {
 			"source": "PowerShell",
@@ -676,23 +679,21 @@
 		}
 	},
 	"terminal.integrated.defaultProfile.windows": "PowerShell",
-	"editor.fontFamily": "'FiraCode Nerd Font', Consolas, 'Courier New', monospace,'Microsoft YaHei'",
+	"editor.fontFamily": "'monaco', 'FiraCode Nerd Font', Consolas, 'Courier New', monospace,'Microsoft YaHei'",
 	"editor.linkedEditing": true,
 	"liveServer.settings.fullReload": true,
-	"liveServer.settings.CustomBrowser": "chrome",
 	"liveServer.settings.donotShowInfoMsg": true,
 	"workbench.editorAssociations": {
-		"*.img": "hexEditor.hexedit",
-		"*.dat": "hexEditor.hexedit"
+		"*.md": "cweijan.markdownViewer"
 	},
 	// "clangd.path": "/Users/nero/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.3/clangd_15.0.3/bin/clangd",
-	"clangd.path": "C:/Enviroments/llvm-mingw/bin/clangd.exe",
+	"clangd.path": "/Users/aoeivux/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
 	"vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)",
 	"editor.fontLigatures": true,
 	"editor.detectIndentation": false,
 	"editor.renderWhitespace": "trailing",
 	"html.format.enable": false,
-	"terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
+	"terminal.integrated.fontFamily": "'monaco'",
 	"security.workspace.trust.startupPrompt": "always",
 	"security.workspace.trust.enabled": false,
 	"explorer.compactFolders": false,
@@ -705,9 +706,9 @@
 	"code-runner.executorMap": {
 		"javascript": "node",
 		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"c": "cd $dir && clang -std=c11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"cpp": "cd $dir && clang++ -std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"objective-c": "cd $dir && clang -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 		"php": "php",
 		"python": "python -u",
 		"perl": "perl",
@@ -755,6 +756,7 @@
 		"fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 		"sml": "cd $dir && sml $fileName"
 	},
+	"clang.executable": "clang",
 	"clang.cflags": [
 		"-std=c11"
 	],
@@ -823,7 +825,7 @@
 	"editor.scrollbar.vertical": "hidden",
 	"editor.scrollbar.horizontal": "hidden",
 	"boot-java.rewrite.reconcile": true,
-	"java.configuration.maven.userSettings": "D:\\Enviroments\\maven\\apache-maven-3.3.5\\conf\\settings.xml",
+	"java.configuration.maven.userSettings": "/Users/aoeivux/Enviroment/apache-maven-3.8.8/conf/settings.xml",
 	"spring.initializr.defaultJavaVersion": "8",
 	"emmet.showSuggestionsAsSnippets": true,
 	"cSpell.showAutocompleteSuggestions": true,
@@ -832,7 +834,7 @@
 	"workbench.editor.showIcons": false,
 	"editor.guides.indentation": false,
 	"[vue]": {
-		"editor.defaultFormatter": "Vue.volar"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"terminal.integrated.scrollback": 5000,
 	"spring.initializr.defaultGroupId": "com.aoeivux",
@@ -846,13 +848,13 @@
 	},
 	"settingsSync.ignoredSettings": [
 		"-statsBar.memoUsage.format",
-		"leetcode.workspaceFolder"
+		"leetcode.workspaceFolder",
+		"-java.configuration.runtimes"
 	],
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"material-icon-theme.hidesExplorerArrows": false,
 	"material-icon-theme.folders.theme": "specific",
 	"material-icon-theme.activeIconPack": "angular",
-	"workbench.colorTheme": "One Monokai",
 	"indentRainbow.indicatorStyle": "light",
 	"indentRainbow.lightIndicatorStyleLineWidth": 2,
 	"indentRainbow.colors": [
@@ -874,34 +876,46 @@
 	"leetcode.hint.configWebviewMarkdown": false,
 	"leetcode.hint.commentDescription": false,
 	"leetcode.defaultLanguage": "java",
-	"leetcode.workspaceFolder": "C:\\Users\\swaylivrx\\.leetcode",
 	"editor.autoIndent": "full",
-	"java.configuration.runtimes": [
-
-	
-		{
-			"name": "JavaSE-11",
-			"path": "D:\\Enviroments\\jdk11",
-			"default": true
-		},
-		{
-			"name": "JavaSE-19",
-			"path": "D:\\Enviroments\\jdk19",
-		}
-	],
 	"[xml]": {
 		"editor.defaultFormatter": "redhat.vscode-xml"
 	},
 	"[lua]": {
 		"editor.defaultFormatter": "sumneko.lua"
 	},
-	"markdown-preview-enhanced.liveUpdate": true,
+	"markdown-preview-enhanced.liveUpdate": false,
 	"markdown.styles": [
 		"https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 	],
-	"markdown-preview-enhanced.previewTheme": "solarized-dark.css",
-	"cSpell.userWords": [
-		"aoeivux"
-	],
+	"markdown-preview-enhanced.previewTheme": "newsprint.css",
 	"workbench.startupEditor": "none",
+	"local-tomcat.warDir": "target",
+	"cSpell.userWords": [
+		"aoeivux",
+		"axios",
+		"classpath",
+		"echart",
+		"echarts",
+		"mybatis",
+		"pyecharts",
+		"Servlet",
+		"springframework"
+	],
+	"path-intellisense.showHiddenFiles": true,
+	"editor.inlineSuggest.enabled": true,
+	"liveServer.settings.CustomBrowser": "chrome",
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false
+	},
+	"git.confirmSync": false,
+	"github.copilot.advanced": {
+	
+	},
+	"workbench.colorTheme": "Default Dark+ Experimental",
+	"redhat.telemetry.enabled": false,
+	"java.configuration.runtimes": [
+	],
 }
