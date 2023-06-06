@@ -448,7 +448,6 @@ function proxy_on() {
     export http_proxy="http://127.0.0.1:7890"
     export https_proxy=$http_proxy
     export all_proxy=socks5://127.0.0.1:7890 # or this line
-    echo -e "\n"
     echo -e "\033[32m已开启代理\033[0m" # 设置颜色
 }
 
@@ -465,15 +464,15 @@ function proxy_off(){
 export EDITOR=/opt/homebrew/bin/nvim
 export HOMEBREW_NO_AUTO_UPDATE=true
 export JDTLS_HOME=/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-jdtls/
-export MAVEN_HOME=/Users/nero/Enviroments/apache-maven-3.8.4
+export MAVEN_HOME=/Users/aoeivux/Enviroment/apache-maven-3.8.8
 
-export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-9.jdk/Contents/Home
-export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home
-export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home
+
+export JAVA_8_HOME=/Users/aoeivux/Library/Java/JavaVirtualMachines/azul-1.8.0_372/Contents/Home
+
+export JAVA_17_HOME=/Users/aoeivux/Library/Java/JavaVirtualMachines/azul-17.0.7/Contents/Home
 
 alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
 alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
-alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
 
 export JAVA_HOME=$JAVA_17_HOME
 
@@ -499,3 +498,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
+
+export LDFLAGS="-L/opt/homebrew/opt/mysql@5.7/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/mysql@5.7/include"
