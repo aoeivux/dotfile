@@ -84,12 +84,12 @@ shift + alt - f : \
 alt - f : yabai -m window --toggle zoom-fullscreen
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
 
-alt - c : ~/.config/yabai/create_new_space.sh 1
+alt - c : ~/.config/yabai/scripts/create_new_space.sh 1
 
 # create desktop and follow focus - uses jq for parsing json (brew install jq)
-cmd + alt - c : ~/.config/yabai/create_new_space.sh
+cmd + alt - c : ~/.config/yabai/scripts/create_new_space.sh
 
 # destroy desktop and goto recent space
 # force refresh space bar
-alt - w : ~/.config/yabai/destroy_space.sh
+alt - w : ~/.config/yabai/scripts/destroy_space.sh
 
