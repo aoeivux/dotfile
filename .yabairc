@@ -53,7 +53,7 @@ yabai -m config mouse_drop_action            swap
 # Rules
 # ====
 
-otherApp='^(IINA|访达|Finder|Calendar|日历|System Preferences|系统偏好设置|Mail|微信|WeChat|QQ|网易云音乐|NetEaseMusic|Tencent Lemon|企业微信|Todoist|Input Source Pro|Spotify|Enpass|预览|scrcpy|iTerm|ClashX Pro|wpsoffice)$'
+otherApp='^(IINA|访达|ClashX Pro|Finder|Calendar|日历|System Preferences|系统偏好设置|Mail|微信|WeChat|QQ|网易云音乐|NetEaseMusic|Tencent Lemon|企业微信|Todoist|Input Source Pro|Spotify|Enpass|预览|scrcpy|iTerm|ClashX Pro|wpsoffice)$'
 yabai -m rule --add app="${otherApp}" manage=off
 
 ## specific rule
