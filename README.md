@@ -32,3 +32,6 @@ sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa range
 `put tmux into ~/.config/ and .tmux.conf into ~/`
 then run 
 `cpan -i App::rainbarf`
+
+### nvm
+`wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
