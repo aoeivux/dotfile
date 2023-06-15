@@ -1,16 +1,17 @@
 # Personal Workflow with emacs and neovim.
 
 
-## first of all
+### first of all
 
 run the command bellow
+
 ```shell
 sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus
 ```
 
-## Some thing to know
+### windows yank win32yank
 
-put the `tmux` into `~/.config/`  and `.tmux.conf` into `~/.`
+`scoop install win32yank`
 
 ### install the latest neovim on ubuntu
 
