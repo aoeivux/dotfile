@@ -28,7 +28,7 @@ sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa range
 ### python neovim
 `pip install neovim`
 
-### tmux 
+### tmux (ubuntu needs cpan) 
 `put tmux into ~/.config/ and .tmux.conf into ~/`
 then run 
 `cpan -i App::rainbarf`
