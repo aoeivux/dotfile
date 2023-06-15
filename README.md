@@ -12,6 +12,11 @@ sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa range
 
 put the `tmux` into `~/.config/`  and `.tmux.conf` into `~/.`
 
+### install the latest neovim on ubuntu
+
+`sudo add-apt-repository ppa:neovim-ppa/unstable`
+`sudo apt update`
+`sudo apt install neovim`
 
 ### miniconda3
 `bash Miniconda3-latest-Linux-x86_64.sh`
