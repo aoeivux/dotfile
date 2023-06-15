@@ -6,7 +6,7 @@
 run the command bellow
 
 ```shell
-sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus
+sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
 ```
 
 ### windows yank win32yank
