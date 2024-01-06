@@ -145,6 +145,8 @@ alias lg="lazygit"
 alias icat="kitty +kitten icat"
 alias ssh="kitty +kitten ssh"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Open lazygit
 function zle_eval {
   echo -en "\e[2K\r"
