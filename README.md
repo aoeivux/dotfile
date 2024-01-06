@@ -3,12 +3,17 @@
 
 ### first of all
 
-run the command bellow
 
+run the command bellow
+#### ubuntu
 ```shell
 sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
 ```
 
+#### MacOS
+```shell
+brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget 
+```
 ### windows yank win32yank
 
 `scoop install win32yank`
