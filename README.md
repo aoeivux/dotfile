@@ -12,7 +12,7 @@ sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa range
 
 #### MacOS
 ```shell
-brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget 
+brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget z
 ```
 ### windows yank win32yank
 
