@@ -446,6 +446,7 @@ fi
 
 # 开启代理
 function proxy_on() {
+    echo -e ""
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
     export http_proxy="http://127.0.0.1:7890"
     export https_proxy=$http_proxy
@@ -455,6 +456,7 @@ function proxy_on() {
 
 # 关闭代理
 function proxy_off(){
+    echo -e ""
     unset http_proxy
     unset https_proxy
     unset all_proxy
