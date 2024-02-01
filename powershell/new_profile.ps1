@@ -8,6 +8,7 @@ Set-Alias g git
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias lg lazygit
+Set-Alias e explorer.exe
 
 function which ($command) {
     if (-not [string]::IsNullOrEmpty($command)) {
