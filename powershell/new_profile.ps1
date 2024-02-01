@@ -9,12 +9,20 @@ Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias lg lazygit
 
-# Utilities
 function which ($command) {
-  Get-Command -Name $command -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
-}
+    if (-not [string]::IsNullOrEmpty($command)) {
+        $cmdPath = Get-Command -Name $command -ErrorAction SilentlyContinue |
+                   Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 
+        if (-not [string]::IsNullOrEmpty($cmdPath)) {
+            return $cmdPath
+        } else {
+            Write-Host "Command '$command' not found."
+        }
+    } else {
+        Write-Host "Please provide a valid command."
+    }
+}
 
 
 # proxy_on.ps1
