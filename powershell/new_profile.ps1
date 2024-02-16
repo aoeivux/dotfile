@@ -1,5 +1,8 @@
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+# pre...
+# Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+Import-Module -Name Terminal-Icons
 
 #Set-Alias -Name vim -Value nvim
 Set-Alias ll ls
