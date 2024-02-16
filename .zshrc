@@ -467,13 +467,13 @@ function proxy_off(){
 
 export EDITOR=/opt/homebrew/bin/nvim
 export HOMEBREW_NO_AUTO_UPDATE=true
-export JDTLS_HOME=/Users/nero/.local/share/nvim/site/pack/packer/start/nvim-jdtls/
-export MAVEN_HOME=/Users/aoeivux/Enviroment/apache-maven-3.8.8
+export JDTLS_HOME=/Users/aoeivuxt/.local/share/nvim/lazy/nvim-jdtls/
+
+export MAVEN_HOME=/Users/aoeivuxt/Environment/apache-maven-3.8.8/
 
 
-export JAVA_8_HOME=/Users/aoeivux/Library/Java/JavaVirtualMachines/azul-1.8.0_372/Contents/Home
-
-export JAVA_17_HOME=/Users/aoeivux/Library/Java/JavaVirtualMachines/azul-17.0.7/Contents/Home
+export JAVA_8_HOME=/Users/aoeivuxt/Library/Java/JavaVirtualMachines/azul-1.8.0_402/Contents/Home
+export JAVA_17_HOME=/Users/aoeivuxt/Library/Java/JavaVirtualMachines/azul-17.0.10/Contents/Home
 
 alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
 alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
