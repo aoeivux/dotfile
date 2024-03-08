@@ -53,8 +53,8 @@ nmap gi <action>(GotoImplementation)
 nmap ma <action>(ToggleBookmark)
 
 " change tab
-nmap tn <action>(NextTab)
-nmap tp <action>(PreviousTab)
+nmap <Tab> <action>(NextTab)
+nmap <S-Tab> <action>(PreviousTab)
 
 map <leader>r <action>(RecentFiles)
 map <A-z> <action>(ToggleZenMode)
