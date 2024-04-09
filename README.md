@@ -3,8 +3,13 @@
 
 ### first of all
 
+### C/C ++ compile tool chain
 
-run the command bellow
+```shell
+sudo apt install build-essential
+```
+
+run the command bellow(packages needed)
 #### ubuntu
 ```shell
 sudo apt install tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
