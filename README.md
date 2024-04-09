@@ -64,15 +64,17 @@ else
 fi
 ```
 
-**source ~/.proxy set**
+run and test
 
-**source ~/.proxy unset**
+```shell
+source ~/.proxy set
 
-**source ~/.proxy test**
+source ~/.proxy unset
 
-test
-**wget wwww.google.com**
+source ~/.proxy test
 
+wget wwww.google.com
+```
 
 run the command bellow(packages needed)
 #### ubuntu
