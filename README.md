@@ -6,7 +6,7 @@
 ### C/C ++ compile tool chain
 
 ```shell
-sudo apt install build-essential
+sudo apt install build-essential cmake
 ```
 
 run the command bellow(packages needed)
