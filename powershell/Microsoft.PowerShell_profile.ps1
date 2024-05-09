@@ -9,10 +9,10 @@
 # scoop install lazygit
 
 #Download Modules
-#Install-Module -Name Terminal-Icons -Repository PSGallery -Force
-#Install-Module -Name z -Force
-#Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublishercheck
-#Install-Module -Name PSFzf -Scope CurrentUser -Force
+Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+Install-Module -Name z -Force
+Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublishercheck
+Install-Module -Name PSFzf -Scope CurrentUser -Force
 
 # Download oh-my-zsh
 #Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.dev/install.ps1'))
@@ -32,7 +32,7 @@ Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 
 
 # Alias
-Set-Alias -Name vim -Value nvim
+# Set-Alias -Name vim -Value nvim
 Set-Alias ll ls
 Set-Alias ra lf
 Set-Alias g git
