@@ -106,7 +106,7 @@ brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf e
 `pip install neovim`
 
 ### tmux (ubuntu needs cpan) 
-`put tmux into ~/.config/ and .tmux.conf into ~/`
+`put tmux into ~/.config/ and .tmux.conf into ~/ or you can rename min_tmux.conf to .tmux.conf and mv into ~/`
 then run 
 `cpan -i App::rainbarf`
 
