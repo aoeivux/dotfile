@@ -19,7 +19,7 @@ set laststatus=2
 set expandtab
 set scrolloff=10
 set backupskip+=/tmp/*,/private/tmp/*
-set inccommand=split
+" set inccommand=split
 set ignorecase
 set smarttab
 set breakindent
@@ -31,7 +31,7 @@ set path+=**
 
 set splitbelow
 set splitright
-set splitkeep=cursor
+" set splitkeep=cursor
 set mouse=a
 
 let &t_Cs = "\e[4:3m"
