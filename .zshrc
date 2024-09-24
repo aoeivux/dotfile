@@ -145,7 +145,6 @@ alias lg="lazygit"
 alias icat="kitty +kitten icat"
 alias ssh="kitty +kitten ssh"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Open lazygit
 function zle_eval {
@@ -164,24 +163,6 @@ zle -N openlazygit; bindkey "^G" openlazygit
 zstyle ':omz:update' mode disabled
 DISABLE_AUTO_UPDATE="true"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-# X11 path
-export CPPFLAGS=-I/opt/X11/include
 
 # TMUX
 # if which tmux >/dev/null 2>&1; then
@@ -443,7 +424,6 @@ fi
 
 
 
-
 # 开启系统代理
 function proxy_on() {
 	export http_proxy=http://127.0.0.1:7890
@@ -465,47 +445,7 @@ function proxy_off(){
 	unset NO_PROXY
 	echo -e "\033[31m[×] 已关闭代理\033[0m"
 }
-EOF
 
 
-export EDITOR=/opt/homebrew/bin/nvim
-export HOMEBREW_NO_AUTO_UPDATE=true
-export JDTLS_HOME=/Users/aoeivuxt/.local/share/nvim/lazy/nvim-jdtls/
-
-export MAVEN_HOME=/Users/aoeivuxt/Environment/apache-maven-3.8.8/
-
-
-export JAVA_8_HOME=/Users/aoeivuxt/Library/Java/JavaVirtualMachines/azul-1.8.0_402/Contents/Home
-export JAVA_17_HOME=/Users/aoeivuxt/Library/Java/JavaVirtualMachines/azul-17.0.10/Contents/Home
-
-alias jdk17="export JAVA_HOME=$JAVA_17_HOME"
-alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
-
-export JAVA_HOME=$JAVA_17_HOME
-
-export PATH=$PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin:/Users/nero/.emacs.d/bin/
-
-
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-export XDG_CONFIG_HOME="$HOME/.config"
-
-#if [ -z "$TMUX" ]; then
-#    tmux attach -t default || tmux new -s default
-#fi
-
-
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
-export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
-
-export LDFLAGS="-L/opt/homebrew/opt/mysql@5.7/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/mysql@5.7/include"
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
