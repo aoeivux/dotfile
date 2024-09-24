@@ -92,8 +92,8 @@ brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf e
 
 ### install the latest neovim on ubuntu
 (unstable is the latest version)
-`sudo add-apt-repository ppa:neovim-ppa/unstable`
-`sudo apt update`
+`sudo add-apt-repository ppa:neovim-ppa/unstable` &&
+`sudo apt update` &&
 `sudo apt install neovim`
 
 ### miniconda3
