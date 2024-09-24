@@ -8,7 +8,7 @@ sudo pacman -Syu
 ```
 
 ```shell
-sudo pacman -S base-devel lazygit tmux zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip
+sudo pacman -S base-devel lazygit tmux zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip && cpan -i App::rainbarf
 ```
 
 ```shell
