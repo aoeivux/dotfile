@@ -1,8 +1,5 @@
-# Personal Workflow with emacs and neovim.
+# Personal Workflow.
 
-
-
-run the command bellow(packages needed)
 
 
 ### Arch
@@ -12,6 +9,18 @@ sudo pacman -Syu
 
 ```shell
 sudo pacman -S base-devel lazygit tmux zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip
+```
+
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+```shell
+mkdir ~/Github && git clone https://github.com/aoeivux/dotfile ~/Github && cp ~/Github/dotfile/.tmux.conf ~/Github/dotfile/.zshrc ~/Github/dotfile/antigen.zsh ~/ && cp -r ~/Github/dotfile/tmux ~/Github/dotfile/ranger ~/.config/
+```
+
+```shell
+git clone https://github.com/aoeivux/nvchad ~/.config/nvim && nvim
 ```
 
 ### ubuntu
