@@ -11,11 +11,6 @@ sudo pacman -Syu
 sudo pacman -S base-devel lazygit tmux zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip
 ```
 
-[optional]
-```shell
-sudo pacman -S go
-```
-
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -27,6 +22,13 @@ mkdir ~/Github && git clone https://github.com/aoeivux/dotfile ~/Github && cp ~/
 ```shell
 git clone https://github.com/aoeivux/nvchad ~/.config/nvim && nvim
 ```
+
+`[optional]`
+
+```shell
+sudo pacman -S go
+```
+
 
 ### ubuntu
 ```shell
