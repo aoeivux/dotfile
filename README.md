@@ -40,6 +40,13 @@ sudo apt install build-essential tmux zsh vim neovim neofetch fd-find ripgrep tm
 brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget z
 ```
 
+### lazygit
+Default path for the global config file:
+
+Linux: ~/.config/lazygit/config.yml
+MacOS: ~/Library/Application\ Support/lazygit/config.yml
+Windows: %LOCALAPPDATA%\lazygit\config.yml (default location, but it will also be found in %APPDATA%\lazygit\config.yml
+
 ### windows yank win32yank
 
 `scoop install win32yank`
