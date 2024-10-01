@@ -8,7 +8,7 @@ sudo pacman -Syu
 ```
 
 ```shell
-sudo pacman -S base-devel lazygit tmux zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip && cpan -i App::rainbarf
+sudo pacman -S base-devel lazygit tmux xclip zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip && cpan -i App::rainbarf
 ```
 
 ```shell
@@ -32,12 +32,12 @@ sudo pacman -S go
 
 ### ubuntu
 ```shell
-sudo apt install build-essential tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
+sudo apt install build-essential xclip tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
 ```
 
 ### MacOS
 ```shell
-brew install zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget z
+brew install  zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget z
 ```
 
 ### lazygit
