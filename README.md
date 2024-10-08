@@ -73,3 +73,6 @@ then run
 
 ### nvm
 `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
+
+### wezterm
+put the .wezterm.lua in `$HOME/`
