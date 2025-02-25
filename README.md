@@ -1,6 +1,17 @@
-# Personal workflow.
+# Personal workflow
 
 ### Windows
+```shell
+scoop bucket add extras
+```
+
+```shell
+scoop bucket add main
+```
+
+```shell
+scoop install z gcc eza fd ripgrep fzf nodejs make cmake luarocks yazi lazygit
+```
 
 ### Arch Linux
 ```shell
