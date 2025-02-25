@@ -1,8 +1,8 @@
 # Personal workflow.
 
+### Windows
 
-
-### Arch
+### Arch Linux
 ```shell
 sudo pacman -Syu
 ```
@@ -30,7 +30,7 @@ sudo pacman -S go
 ```
 
 
-### ubuntu
+### Ubuntu
 ```shell
 sudo apt install build-essential xclip tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
 ```
@@ -40,39 +40,39 @@ sudo apt install build-essential xclip tmux zsh vim neovim neofetch fd-find ripg
 brew install  zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget z
 ```
 
-### lazygit
+#### lazygit
 Default path for the global config file:
 
-Linux: ~/.config/lazygit/config.yml
-MacOS: ~/Library/Application\ Support/lazygit/config.yml
-Windows: %LOCALAPPDATA%\lazygit\config.yml (default location, but it will also be found in %APPDATA%\lazygit\config.yml
+Linux: `~/.config/lazygit/config.yml`
+MacOS: `~/Library/Application\ Support/lazygit/config.yml`
+Windows: `%LOCALAPPDATA%\lazygit\config.yml` (default location, but it will also be found in `%APPDATA%\lazygit\config.yml`
 
-### windows yank win32yank
+#### Windows yank win32yank
 
 `scoop install win32yank`
 
-### install the latest neovim on ubuntu
+#### Install the latest neovim on ubuntu
 (unstable is the latest version)
 `sudo add-apt-repository ppa:neovim-ppa/unstable` &&
 `sudo apt update` &&
 `sudo apt install neovim`
 
-### miniconda3
+#### miniconda3
 `bash Miniconda3-latest-Linux-x86_64.sh`
 
-### oh-my-zsh
+#### oh-my-zsh
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
-### python neovim
+#### python neovim
 `pip install neovim`
 
-### tmux (ubuntu needs cpan) 
+#### tmux (ubuntu needs cpan) 
 `put tmux into ~/.config/ and .tmux.conf into ~/ or you can rename min_tmux.conf to .tmux.conf and mv into ~/`
 then run 
 `cpan -i App::rainbarf`
 
-### nvm
+#### nvm
 `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash`
 
-### wezterm
+#### wezterm
 put the .wezterm.lua in `$HOME/`
