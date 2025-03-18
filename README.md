@@ -13,34 +13,6 @@ scoop bucket add main
 scoop install z gcc eza fd ripgrep fzf nodejs make cmake luarocks yazi lazygit
 ```
 
-### Arch Linux
-```shell
-sudo pacman -Syu
-```
-
-```shell
-sudo pacman -S base-devel lazygit tmux xclip zsh vim neovim neofetch fd ripgrep fzf exa ranger python-pip cpanminus nodejs npm unzip && cpan -i App::rainbarf
-```
-
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-```shell
-mkdir ~/Github && git clone https://github.com/aoeivux/dotfile ~/Github && cp ~/Github/dotfile/.tmux.conf ~/Github/dotfile/.zshrc ~/Github/dotfile/antigen.zsh ~/ && cp -r ~/Github/dotfile/tmux ~/Github/dotfile/ranger ~/.config/
-```
-
-```shell
-git clone https://github.com/aoeivux/nvchad ~/.config/nvim && nvim
-```
-
-`[optional]`
-
-```shell
-sudo pacman -S go
-```
-
-
 ### Ubuntu
 ```shell
 sudo apt install build-essential xclip tmux zsh vim neovim neofetch fd-find ripgrep tmux fzf exa ranger python3-pip cpanminus nodejs npm unzip
@@ -48,7 +20,7 @@ sudo apt install build-essential xclip tmux zsh vim neovim neofetch fd-find ripg
 
 ### MacOS
 ```shell
-brew install  zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa ranger wget z
+brew install  zsh neovim neofetch vim rainbarf lazygit node fd ripgrep tmux fzf exa wget z yazi
 ```
 
 #### lazygit
